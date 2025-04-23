@@ -5,7 +5,7 @@
 
 @section('content')
     <!-- Hero Banner -->
-    <section class="hero-banner py-5">
+    <section class="hero-banner">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -14,7 +14,7 @@
                     <a href="/contact" class="btn btn-primary btn-lg">立即諮詢</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://via.placeholder.com/600x400" alt="網站設計示意圖" class="img-fluid rounded">
+                    <img src="{{ asset('images/banner-pc.png') }}" alt="網站設計示意圖" class="img-fluid">
                 </div>
             </div>
         </div>

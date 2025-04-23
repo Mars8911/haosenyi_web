@@ -98,6 +98,82 @@
             margin-bottom: 2rem;
         }
 
+        /* Hero Banner Styles */
+        .hero-banner {
+            background: linear-gradient(135deg, #0056b3 0%, #30a2ff 100%);
+            position: relative;
+            overflow: hidden;
+            color: white;
+            margin-top: -80px;
+            padding-top: calc(80px + 5rem) !important;
+            padding-bottom: 5rem !important;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L100,0 L100,100 Q50,100 0,50 Z' fill='rgba(255,255,255,0.1)'/%3E%3C/svg%3E") no-repeat;
+            background-size: cover;
+            z-index: 1;
+        }
+
+        .hero-banner .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-banner h1,
+        .hero-banner .lead {
+            color: white;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .hero-banner .lead {
+            animation-delay: 0.3s;
+        }
+
+        .hero-banner .btn-primary {
+            background-color: white;
+            border-color: white;
+            color: var(--primary-color);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.6s;
+        }
+
+        .hero-banner .btn-primary:hover {
+            background-color: rgba(255,255,255,0.9);
+            border-color: white;
+        }
+
+        .hero-banner .col-lg-6:last-child img {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         @media (max-width: 991.98px) {
             .navbar-collapse {
                 background: white;
