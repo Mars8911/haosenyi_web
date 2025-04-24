@@ -11,10 +11,10 @@ class ContactController extends Controller
     public function index()
     {
         $contactInfo = [
-            'phone' => '04-2260-9770',
-            'email' => 'newscan@newscan.tw',
-            'address' => '台中市南區忠明南路758號21樓',
-            'line_id' => '@newscan'
+            'phone' => '02-77538598',
+            'email' => 'service@haosenyi.com',
+            'address' => '221新北市汐止區新台五路一段97號27樓',
+            'line_id' => '@gaosenti'
         ];
 
         return view('contact', compact('contactInfo'));

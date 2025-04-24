@@ -23,18 +23,19 @@
     <!-- Plans Section -->
     <section class="plans-section py-5 bg-light">
         <div class="container">
-            <h2 class="text-center section-title">方案說明</h2>
+            <h2 class="text-center section-title">方案介紹</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100">
+                        <img src="{{ asset('images/plan-basic.svg') }}" class="card-img-top" alt="超值方案示意圖">
                         <div class="card-body">
                             <h3 class="card-title h5">8800超值方案</h3>
                             <p class="card-text text-primary fw-bold">NT$8,800 起</p>
                             <ul class="list-unstyled">
-                                <li>✓ 響應式網站設計</li>
-                                <li>✓ 5個頁面以內</li>
-                                <li>✓ 基本SEO優化</li>
-                                <li>✓ 一年免費維護</li>
+                                <li>響應式網站設計</li>
+                                <li>5個頁面以內</li>
+                                <li>基本SEO優化</li>
+                                <li>一年免費維護</li>
                             </ul>
                             <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
@@ -42,14 +43,15 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100">
+                        <img src="{{ asset('images/plan-ecommerce.svg') }}" class="card-img-top" alt="購物車方案示意圖">
                         <div class="card-body">
                             <h3 class="card-title h5">模組購物車方案</h3>
                             <p class="card-text text-primary fw-bold">NT$45,000 起</p>
                             <ul class="list-unstyled">
-                                <li>✓ 完整購物車功能</li>
-                                <li>✓ 金流串接</li>
-                                <li>✓ 訂單管理系統</li>
-                                <li>✓ 會員管理系統</li>
+                                <li>完整購物車功能</li>
+                                <li>金流串接</li>
+                                <li>訂單管理系統</li>
+                                <li>會員管理系統</li>
                             </ul>
                             <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
@@ -57,14 +59,15 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100">
+                        <img src="{{ asset('images/plan-custom.svg') }}" class="card-img-top" alt="形象網站示意圖">
                         <div class="card-body">
                             <h3 class="card-title h5">半客製形象網站</h3>
                             <p class="card-text text-primary fw-bold">NT$45,000 起</p>
                             <ul class="list-unstyled">
-                                <li>✓ 客製化設計</li>
-                                <li>✓ 10個頁面以內</li>
-                                <li>✓ 進階SEO優化</li>
-                                <li>✓ 一年免費維護</li>
+                                <li>客製化設計</li>
+                                <li>10個頁面以內</li>
+                                <li>進階SEO優化</li>
+                                <li>一年免費維護</li>
                             </ul>
                             <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
@@ -72,14 +75,15 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100">
+                        <img src="{{ asset('images/plan-enterprise.svg') }}" class="card-img-top" alt="客製化專案示意圖">
                         <div class="card-body">
                             <h3 class="card-title h5">客製化網站專案</h3>
                             <p class="card-text text-primary fw-bold">依功能報價</p>
                             <ul class="list-unstyled">
-                                <li>✓ 完全客製化開發</li>
-                                <li>✓ 特殊功能開發</li>
-                                <li>✓ 系統整合</li>
-                                <li>✓ 長期技術支援</li>
+                                <li>完全客製化開發</li>
+                                <li>特殊功能開發</li>
+                                <li>系統整合</li>
+                                <li>長期技術支援</li>
                             </ul>
                             <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>

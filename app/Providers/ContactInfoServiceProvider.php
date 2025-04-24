@@ -21,10 +21,10 @@ class ContactInfoServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::share('contactInfo', [
-            'phone' => '04-2260-9770',
+            'phone' => '02-77538598',
             'email' => 'service@haosenyi.com',
-            'address' => '台中市南區建國北路一段96號',
-            'line_id' => '@haosenyi',
+            'address' => '221新北市汐止區新台五路一段97號27樓',
+            'line_id' => 'service@haosenyi.com',
         ]);
     }
 }
