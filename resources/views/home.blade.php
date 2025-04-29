@@ -23,11 +23,14 @@
     <!-- Plans Section -->
     <section class="plans-section py-5 bg-light">
         <div class="container">
-            <h2 class="text-center section-title">方案介紹</h2>
+            <h2 class="text-center section-title py-4 fade-up">方案介紹</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
-                        <img src="{{ asset('images/plan-basic.svg') }}" class="card-img-top" alt="超值方案示意圖">
+                    <div class="plan-card card h-100 position-relative fade-up">
+                        <div class="plan-img-bg">
+                            <img src="{{ asset('images/plan-basic.svg') }}" alt="超值方案示意圖">
+                        </div>
+                        <span class="plan-number">01</span>
                         <div class="card-body">
                             <h3 class="card-title h5">8800超值方案</h3>
                             <p class="card-text text-primary fw-bold">NT$8,800 起</p>
@@ -42,8 +45,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
-                        <img src="{{ asset('images/plan-ecommerce.svg') }}" class="card-img-top" alt="購物車方案示意圖">
+                    <div class="plan-card card h-100 position-relative fade-up">
+                        <div class="plan-img-bg">
+                            <img src="{{ asset('images/plan-ecommerce.svg') }}" alt="購物車方案示意圖">
+                        </div>
+                        <span class="plan-number">02</span>
                         <div class="card-body">
                             <h3 class="card-title h5">模組購物車方案</h3>
                             <p class="card-text text-primary fw-bold">NT$45,000 起</p>
@@ -58,8 +64,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
-                        <img src="{{ asset('images/plan-custom.svg') }}" class="card-img-top" alt="形象網站示意圖">
+                    <div class="plan-card card h-100 position-relative fade-up">
+                        <div class="plan-img-bg">
+                            <img src="{{ asset('images/plan-custom.svg') }}" alt="形象網站示意圖">
+                        </div>
+                        <span class="plan-number">03</span>
                         <div class="card-body">
                             <h3 class="card-title h5">半客製形象網站</h3>
                             <p class="card-text text-primary fw-bold">NT$45,000 起</p>
@@ -74,8 +83,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100">
-                        <img src="{{ asset('images/plan-enterprise.svg') }}" class="card-img-top" alt="客製化專案示意圖">
+                    <div class="plan-card card h-100 position-relative fade-up">
+                        <div class="plan-img-bg">
+                            <img src="{{ asset('images/plan-enterprise.svg') }}" alt="客製化專案示意圖">
+                        </div>
+                        <span class="plan-number">04</span>
                         <div class="card-body">
                             <h3 class="card-title h5">客製化網站專案</h3>
                             <p class="card-text text-primary fw-bold">依功能報價</p>
@@ -162,4 +174,24 @@
             <a href="/contact" class="btn btn-primary btn-lg">免費諮詢</a>
         </div>
     </section>
-@endsection 
+@endsection
+
+@push('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 監聽滾動事件
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, {
+        threshold: 0.1 // 當元素出現 10% 時觸發
+    });
+
+    // 監聽所有需要動畫的元素
+    document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+});
+</script>
+@endpush 

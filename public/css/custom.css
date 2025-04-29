@@ -123,4 +123,189 @@
     width: 60px;
     height: 3px;
     background: #007bff;
+}
+
+.plan-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px 0 rgba(48,162,255,0.08);
+    transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.plan-card:hover, .plan-card:focus-within {
+    box-shadow: 0 8px 32px 0 rgba(48,162,255,0.18);
+    transform: translateY(-8px) scale(1.03);
+    border-color: #30a2ff;
+    z-index: 2;
+}
+.plan-card .plan-img-bg {
+    background: linear-gradient(135deg, #0056b3 0%, #30a2ff 100%);
+    border-radius: 0 0 80% 0/0 0 100% 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+}
+.plan-card .plan-img-bg img {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    margin: 26px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
+}
+.plan-card:hover .plan-img-bg img,
+.plan-card:focus-within .plan-img-bg img {
+    filter: brightness(1) invert(0) drop-shadow(0 0 8px #fff);
+}
+.plan-card .plan-number {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e3f0fa;
+    z-index: 0;
+    transition: color 0.3s;
+}
+.plan-card:hover .plan-number,
+.plan-card:focus-within .plan-number {
+    color: #30a2ff;
+}
+.plan-card .card-title {
+    font-weight: 700;
+    color: #1a2b48;
+    margin-top: 60px;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+.plan-card:hover .card-title,
+.plan-card:focus-within .card-title {
+    color: #30a2ff;
+}
+.plan-card .card-text {
+    color: #1a2b48;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.plan-card ul {
+    margin-bottom: 16px;
+}
+.plan-card ul li {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.plan-card .btn {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+.plan-card .btn-outline-primary:hover {
+    background: #30a2ff;
+    color: #fff;
+    border-color: #30a2ff;
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+    background: linear-gradient(135deg, #0056b3 0%, #30a2ff 100%);
+    position: relative;
+    overflow: hidden;
+    color: white;
+    margin-top: calc(-1 * var(--header-height));
+    padding-top: calc(var(--header-height) + 5rem) !important;
+    padding-bottom: 5rem !important;
+    min-height: 100vh; /* 改為 100vh，確保至少覆蓋整個視窗高度 */
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner .container {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 0; /* 增加上下間距 */
+}
+
+.hero-banner h1 {
+    font-size: 3.5rem; /* 加大標題 */
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero-banner .lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.hero-banner .btn-lg {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+}
+
+.hero-banner .img-fluid {
+    max-width: 110%;
+    transform: translateY(0);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-banner {
+        min-height: calc(100vh + 100px);
+        padding-top: calc(var(--header-height) + 3rem) !important;
+        padding-bottom: 3rem !important;
+    }
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+    .hero-banner .img-fluid {
+        margin-top: 2rem;
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease;
+}
+
+.fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 為每個卡片添加延遲動畫 */
+.plans-section .col-md-6:nth-child(1) .plan-card {
+    transition-delay: 0.1s;
+}
+.plans-section .col-md-6:nth-child(2) .plan-card {
+    transition-delay: 0.3s;
+}
+.plans-section .col-md-6:nth-child(3) .plan-card {
+    transition-delay: 0.5s;
+}
+.plans-section .col-md-6:nth-child(4) .plan-card {
+    transition-delay: 0.7s;
+}
+
+/* 標題動畫 */
+.section-title.fade-up {
+    transition-delay: 0s;
 } 
