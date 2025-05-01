@@ -176,7 +176,7 @@
         <div class="section-bg-pattern"></div>
         <div class="container">
             <div class="row align-items-center">
-            <div class="col-lg-6 fade-left">
+                <div class="col-lg-6 fade-left">
                     <div class="app-showcase position-relative">
                         <div class="app-preview">
                             <div class="phone-frame">
@@ -208,45 +208,44 @@
                 <div class="col-lg-6 fade-right">
                     <div class="app-content pe-lg-4">
                         <div class="section-header mb-4">
-                            <span class="subtitle text-primary">跨平台開發</span>
+                            <span class="subtitle">跨平台開發</span>
                             <h2 class="section-title">App 跨平台開發解決方案</h2>
                         </div>
-                        <p class="lead mb-5">我們提供從 UI 設計、後台 API 到 iOS/Android App 的完整開發服務，讓您的應用程式在各個平台完美運行。</p>
+                        <p class="lead mb-5 text-light">我們提供從 UI 設計、後台 API 到 iOS/Android App 的完整開發服務，讓您的應用程式在各個平台完美運行。</p>
                         <div class="app-features">
                             <div class="feature-item mb-4 d-flex align-items-start">
                                 <div class="feature-icon">
-                                    <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                                    <i class="fas fa-mobile-alt fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">Flutter 跨平台方案</h3>
-                                    <p class="text-muted">採用 Flutter 技術，一次開發即可同時支援 iOS 與 Android 平台，節省開發成本與時間。</p>
+                                    <p class="text-light-gray">採用 Flutter 技術，一次開發即可同時支援 iOS 與 Android 平台，節省開發成本與時間。</p>
                                 </div>
                             </div>
                             <div class="feature-item mb-4 d-flex align-items-start">
                                 <div class="feature-icon">
-                                    <i class="fas fa-server fa-2x text-primary"></i>
+                                    <i class="fas fa-server fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">Laravel 後端 API</h3>
-                                    <p class="text-muted">使用 Laravel 框架打造穩定安全的後端 API，確保資料傳輸的安全性與效能。</p>
+                                    <p class="text-light-gray">使用 Laravel 框架打造穩定安全的後端 API，確保資料傳輸的安全性與效能。</p>
                                 </div>
                             </div>
                             <div class="feature-item d-flex align-items-start">
                                 <div class="feature-icon">
-                                    <i class="fas fa-layer-group fa-2x text-primary"></i>
+                                    <i class="fas fa-layer-group fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">多元應用開發</h3>
-                                    <p class="text-muted">提供商務、預約、電商等多種應用開發，打造專屬於您的 App 解決方案。</p>
+                                    <p class="text-light-gray">提供商務、預約、電商等多種應用開發，打造專屬於您的 App 解決方案。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-5">
-                            <a href="/contact" class="btn btn-primary btn-lg">免費諮詢</a>
+                            <a href="/contact" class="btn btn-gradient btn-lg">免費諮詢</a>
                         </div>
                     </div>
                 </div>
-             
             </div>
         </div>
     </section>
@@ -808,8 +807,9 @@
     }
 
     .app-service-section {
-        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        background: linear-gradient(135deg, #1a1f25 0%, #2c3e50 100%);
         z-index: 1;
+        color: #fff;
     }
 
     .section-bg-pattern {
@@ -818,9 +818,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: radial-gradient(#30a2ff15 1px, transparent 1px);
+        background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
         background-size: 20px 20px;
-        opacity: 0.5;
+        opacity: 0.2;
         z-index: -1;
     }
 
@@ -836,22 +836,27 @@
         letter-spacing: 1px;
         margin-bottom: 1rem;
         display: block;
+        color: #75C2F6;
     }
 
     .section-header .section-title {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
-        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        background: linear-gradient(135deg, #75C2F6, #30a2ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
+    .text-light-gray {
+        color: rgba(255,255,255,0.8);
+    }
+
     .feature-icon {
         width: 60px;
         height: 60px;
-        background: linear-gradient(135deg, #30a2ff10, #75C2F610);
+        background: rgba(117, 194, 246, 0.1);
         border-radius: 15px;
         display: flex;
         align-items: center;
@@ -859,43 +864,54 @@
         transition: all 0.3s ease;
     }
 
+    .feature-icon i {
+        color: #75C2F6;
+    }
+
     .feature-item:hover .feature-icon {
-        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        background: linear-gradient(135deg, #75C2F6, #30a2ff);
     }
 
     .feature-item:hover .feature-icon i {
         color: white !important;
     }
 
-    .app-showcase {
-        padding: 2rem;
+    .btn-gradient {
+        background: linear-gradient(135deg, #75C2F6, #30a2ff);
+        border: none;
+        color: white;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(117, 194, 246, 0.3);
     }
 
     .phone-frame {
         width: 280px;
         height: 560px;
-        background: #333;
+        background: #2c3e50;
         border-radius: 40px;
         padding: 10px;
         margin: 0 auto;
         position: relative;
-        box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.3);
     }
 
     .screen {
-        background: white;
+        background: #fff;
         height: 100%;
         border-radius: 30px;
         overflow: hidden;
     }
 
-    .app-interface {
-        height: 100%;
-    }
-
     .app-header {
         height: 60px;
-        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        background: linear-gradient(135deg, #75C2F6, #30a2ff);
     }
 
     .app-content {
@@ -910,46 +926,24 @@
         animation: pulse 2s infinite;
     }
 
-    .content-block:nth-child(2) {
-        animation-delay: 0.5s;
-    }
-
-    .content-block:nth-child(3) {
-        animation-delay: 1s;
-    }
-
     .float-item {
         position: absolute;
         width: 50px;
         height: 50px;
-        background: white;
+        background: rgba(117, 194, 246, 0.1);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         animation: float 6s ease-in-out infinite;
         animation-delay: var(--delay);
-    }
-
-    .float-item:nth-child(1) {
-        top: 20%;
-        left: 0;
-    }
-
-    .float-item:nth-child(2) {
-        top: 50%;
-        right: 0;
-    }
-
-    .float-item:nth-child(3) {
-        bottom: 20%;
-        left: 20%;
+        backdrop-filter: blur(5px);
     }
 
     .float-item i {
         font-size: 1.5rem;
-        color: #30a2ff;
+        color: #75C2F6;
     }
 
     @keyframes float {
