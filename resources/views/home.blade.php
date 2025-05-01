@@ -171,105 +171,82 @@
         </div>
     </section>
 
-    <!-- AI Service Section -->
-    <section class="ai-service-section py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2 fade-left">
-                    <h2 class="section-title mb-4">AI 智能客服串接</h2>
-                    <p class="lead mb-4">結合 GPT 技術，打造 24 小時智慧客服，有效提升轉換率與服務品質</p>
-                    <div class="ai-features">
-                        <div class="feature-item mb-4">
-                            <div class="feature-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h3 class="h5 mb-2">自動對話處理</h3>
-                                <p>智能識別客戶需求，即時回覆諮詢</p>
-                            </div>
-                        </div>
-                        <div class="feature-item mb-4">
-                            <div class="feature-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h3 class="h5 mb-2">持續學習優化</h3>
-                                <p>系統自動學習，持續提升服務品質</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-comments"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h3 class="h5 mb-2">多平台整合</h3>
-                                <p>支援 LINE、FB、官網等多平台串接</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-lg-1 fade-right">
-                    <div class="chat-demo">
-                        <div class="chat-bubble customer">
-                            <p>請問你們的網站設計方案有哪些？</p>
-                        </div>
-                        <div class="chat-bubble ai">
-                            <p>您好！我們提供多種網站設計方案：</p>
-                            <ul>
-                                <li>基礎方案：適合小型企業</li>
-                                <li>進階方案：含完整功能</li>
-                                <li>客製方案：依需求客製</li>
-                            </ul>
-                            <p>需要為您詳細介紹嗎？</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- App Development Section -->
-    <section class="app-service-section py-5">
+    <section class="app-service-section py-5 position-relative overflow-hidden">
+        <div class="section-bg-pattern"></div>
         <div class="container">
             <div class="row align-items-center">
+            <div class="col-lg-6 fade-left">
+                    <div class="app-showcase position-relative">
+                        <div class="app-preview">
+                            <div class="phone-frame">
+                                <div class="screen">
+                                    <div class="app-interface">
+                                        <div class="app-header"></div>
+                                        <div class="app-content">
+                                            <div class="content-block"></div>
+                                            <div class="content-block"></div>
+                                            <div class="content-block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="float-item" style="--delay: 0s">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="float-item" style="--delay: 1s">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="float-item" style="--delay: 2s">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-6 fade-right">
-                    <h2 class="section-title mb-4">App 跨平台開發</h2>
-                    <p class="lead mb-4">我們提供從 UI 設計、後台 API 到 iOS/Android App 的完整開發服務</p>
-                    <div class="app-features">
-                        <div class="feature-item mb-4">
-                            <div class="feature-icon">
-                                <i class="fas fa-mobile-alt"></i>
+                    <div class="app-content pe-lg-4">
+                        <div class="section-header mb-4">
+                            <span class="subtitle text-primary">跨平台開發</span>
+                            <h2 class="section-title">App 跨平台開發解決方案</h2>
+                        </div>
+                        <p class="lead mb-5">我們提供從 UI 設計、後台 API 到 iOS/Android App 的完整開發服務，讓您的應用程式在各個平台完美運行。</p>
+                        <div class="app-features">
+                            <div class="feature-item mb-4 d-flex align-items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                                </div>
+                                <div class="feature-content ms-4">
+                                    <h3 class="gradient-text h5 mb-2">Flutter 跨平台方案</h3>
+                                    <p class="text-muted">採用 Flutter 技術，一次開發即可同時支援 iOS 與 Android 平台，節省開發成本與時間。</p>
+                                </div>
                             </div>
-                            <div class="feature-content">
-                                <h3 class="h5 mb-2">Flutter 跨平台方案</h3>
-                                <p>一次開發，同時支援 iOS 與 Android 平台</p>
+                            <div class="feature-item mb-4 d-flex align-items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-server fa-2x text-primary"></i>
+                                </div>
+                                <div class="feature-content ms-4">
+                                    <h3 class="gradient-text h5 mb-2">Laravel 後端 API</h3>
+                                    <p class="text-muted">使用 Laravel 框架打造穩定安全的後端 API，確保資料傳輸的安全性與效能。</p>
+                                </div>
+                            </div>
+                            <div class="feature-item d-flex align-items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-layer-group fa-2x text-primary"></i>
+                                </div>
+                                <div class="feature-content ms-4">
+                                    <h3 class="gradient-text h5 mb-2">多元應用開發</h3>
+                                    <p class="text-muted">提供商務、預約、電商等多種應用開發，打造專屬於您的 App 解決方案。</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="feature-item mb-4">
-                            <div class="feature-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h3 class="h5 mb-2">Laravel 後端 API</h3>
-                                <p>穩定安全的後端 API 架構</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h3 class="h5 mb-2">多元應用開發</h3>
-                                <p>商務、預約、電商等多種 App 應用</p>
-                            </div>
+                        <div class="mt-5">
+                            <a href="/contact" class="btn btn-primary btn-lg">免費諮詢</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 fade-left">
-                    <div class="app-showcase">
-                        <img src="{{ asset('images/app-showcase.png') }}" alt="App 展示" class="img-fluid">
-                    </div>
-                </div>
+             
             </div>
         </div>
     </section>
@@ -828,6 +805,178 @@
 
     .feature-card:hover .gradient-text::after {
         transform: scaleX(1);
+    }
+
+    .app-service-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        z-index: 1;
+    }
+
+    .section-bg-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: radial-gradient(#30a2ff15 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .app-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .section-header .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #30a2ff10, #75C2F610);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .feature-item:hover .feature-icon {
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+    }
+
+    .feature-item:hover .feature-icon i {
+        color: white !important;
+    }
+
+    .app-showcase {
+        padding: 2rem;
+    }
+
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+        background: #333;
+        border-radius: 40px;
+        padding: 10px;
+        margin: 0 auto;
+        position: relative;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    }
+
+    .screen {
+        background: white;
+        height: 100%;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .app-interface {
+        height: 100%;
+    }
+
+    .app-header {
+        height: 60px;
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+    }
+
+    .app-content {
+        padding: 20px;
+    }
+
+    .content-block {
+        height: 80px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        animation: pulse 2s infinite;
+    }
+
+    .content-block:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    .content-block:nth-child(3) {
+        animation-delay: 1s;
+    }
+
+    .float-item {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        animation: float 6s ease-in-out infinite;
+        animation-delay: var(--delay);
+    }
+
+    .float-item:nth-child(1) {
+        top: 20%;
+        left: 0;
+    }
+
+    .float-item:nth-child(2) {
+        top: 50%;
+        right: 0;
+    }
+
+    .float-item:nth-child(3) {
+        bottom: 20%;
+        left: 20%;
+    }
+
+    .float-item i {
+        font-size: 1.5rem;
+        color: #30a2ff;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.7;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .app-showcase {
+            margin-top: 3rem;
+        }
+        .phone-frame {
+            transform: scale(0.9);
+        }
     }
     </style>
 
