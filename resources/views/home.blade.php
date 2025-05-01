@@ -3,6 +3,10 @@
 @section('title', '好森逸網站設計 - 專業網站設計服務')
 @section('description', '好森逸網站設計提供專業的網站設計服務，包括企業網站、電商網站、形象網站等，為您打造最適合的網站')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endpush
+
 @section('content')
     <!-- Hero Banner -->
     <section class="hero-banner">
@@ -47,9 +51,28 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up">
                         <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-ecommerce.svg') }}" alt="購物車方案示意圖">
+                            <img src="{{ asset('images/plan-custom.svg') }}" alt="形象網站示意圖">
                         </div>
                         <span class="plan-number">02</span>
+                        <div class="card-body">
+                            <h3 class="card-title h5">半客製形象網站</h3>
+                            <p class="card-text text-primary fw-bold">NT$36,800 起</p>
+                            <ul class="list-unstyled">
+                                <li>客製化設計</li>
+                                <li>10個頁面以內</li>
+                                <li>進階SEO優化</li>
+                                <li>一年免費維護</li>
+                            </ul>
+                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="plan-card card h-100 position-relative fade-up">
+                        <div class="plan-img-bg">
+                            <img src="{{ asset('images/plan-ecommerce.svg') }}" alt="購物車方案示意圖">
+                        </div>
+                        <span class="plan-number">03</span>
                         <div class="card-body">
                             <h3 class="card-title h5">模組購物車方案</h3>
                             <p class="card-text text-primary fw-bold">NT$45,000 起</p>
@@ -63,25 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up">
-                        <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-custom.svg') }}" alt="形象網站示意圖">
-                        </div>
-                        <span class="plan-number">03</span>
-                        <div class="card-body">
-                            <h3 class="card-title h5">半客製形象網站</h3>
-                            <p class="card-text text-primary fw-bold">NT$45,000 起</p>
-                            <ul class="list-unstyled">
-                                <li>客製化設計</li>
-                                <li>10個頁面以內</li>
-                                <li>進階SEO優化</li>
-                                <li>一年免費維護</li>
-                            </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up">
                         <div class="plan-img-bg">
@@ -99,6 +104,170 @@
                             </ul>
                             <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Service Section -->
+    <section class="seo-service-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-right">
+                    <div class="seo-content">
+                        <div class="section-header">
+                            <h2 class="section-title">SEO 關鍵字優化</h2>
+                        </div>
+                        <p class="lead text-muted mb-5">從網站架構、標題、內文與速度全面優化，提升 Google 搜尋排名</p>
+                        <div class="seo-features">
+                            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>技術面優化</h3>
+                                    <p>網站速度與結構優化，提升使用者體驗</p>
+                                </div>
+                            </div>
+                            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>內容策略</h3>
+                                    <p>專業的標題與內容撰寫策略</p>
+                                </div>
+                            </div>
+                            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>搜尋曝光</h3>
+                                    <p>關鍵字佈局與成效追蹤分析</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <div class="seo-image-wrapper">
+                        <div class="floating-elements">
+                            <div class="float-item" style="--delay: 0s">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="float-item" style="--delay: 1s">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="float-item" style="--delay: 2s">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/seo.png') }}" alt="SEO 分析儀表板" class="img-fluid main-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Service Section -->
+    <section class="ai-service-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 fade-left">
+                    <h2 class="section-title mb-4">AI 智能客服串接</h2>
+                    <p class="lead mb-4">結合 GPT 技術，打造 24 小時智慧客服，有效提升轉換率與服務品質</p>
+                    <div class="ai-features">
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="h5 mb-2">自動對話處理</h3>
+                                <p>智能識別客戶需求，即時回覆諮詢</p>
+                            </div>
+                        </div>
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="h5 mb-2">持續學習優化</h3>
+                                <p>系統自動學習，持續提升服務品質</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="h5 mb-2">多平台整合</h3>
+                                <p>支援 LINE、FB、官網等多平台串接</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 fade-right">
+                    <div class="chat-demo">
+                        <div class="chat-bubble customer">
+                            <p>請問你們的網站設計方案有哪些？</p>
+                        </div>
+                        <div class="chat-bubble ai">
+                            <p>您好！我們提供多種網站設計方案：</p>
+                            <ul>
+                                <li>基礎方案：適合小型企業</li>
+                                <li>進階方案：含完整功能</li>
+                                <li>客製方案：依需求客製</li>
+                            </ul>
+                            <p>需要為您詳細介紹嗎？</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Development Section -->
+    <section class="app-service-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-right">
+                    <h2 class="section-title mb-4">App 跨平台開發</h2>
+                    <p class="lead mb-4">我們提供從 UI 設計、後台 API 到 iOS/Android App 的完整開發服務</p>
+                    <div class="app-features">
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="h5 mb-2">Flutter 跨平台方案</h3>
+                                <p>一次開發，同時支援 iOS 與 Android 平台</p>
+                            </div>
+                        </div>
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="h5 mb-2">Laravel 後端 API</h3>
+                                <p>穩定安全的後端 API 架構</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="h5 mb-2">多元應用開發</h3>
+                                <p>商務、預約、電商等多種 App 應用</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <div class="app-showcase">
+                        <img src="{{ asset('images/app-showcase.png') }}" alt="App 展示" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -174,6 +343,484 @@
             <a href="/contact" class="btn btn-primary btn-lg">免費諮詢</a>
         </div>
     </section>
+
+    <style>
+    .brand-culture-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .culture-image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        position: relative;
+    }
+
+    .image-grid-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .image-grid-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .image-grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .image-grid-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .main-image {
+        grid-column: 1 / -1;
+        height: 300px;
+    }
+
+    .culture-content {
+        padding: 2rem;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .culture-item {
+        padding: 1.5rem;
+        background: rgba(255,255,255,0.8);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .culture-item:hover {
+        transform: translateX(10px);
+        background: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .section-title {
+        position: relative;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #007bff, #00e5ff);
+    }
+
+    /* 針對左對齊的標題特別處理 */
+    .seo-content .section-title:after {
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+
+    .section-header .section-title {
+        margin: 0;
+        font-size: 2.5rem;
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fade-right {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.8s ease-out;
+    }
+
+    .fade-left {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: all 0.8s ease-out;
+    }
+
+    .fade-right.active,
+    .fade-left.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    @media (max-width: 991px) {
+        .culture-content {
+            margin-top: 2rem;
+        }
+    }
+
+    .seo-service-section {
+        position: relative;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        animation: fadeInDown 1s ease-out;
+    }
+
+    .section-title {
+        position: relative;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #30a2ff, #75C2F6);
+        animation: lineGrow 1.5s ease-out forwards;
+    }
+
+    @keyframes lineGrow {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .lead.text-muted {
+        animation: fadeIn 1s ease-out 0.5s forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .section-header .section-title {
+        margin: 0;
+        font-size: 2.5rem;
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .feature-card {
+        display: flex;
+        align-items: flex-start;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        margin-bottom: 1.5rem;
+        transform: translateY(30px);
+        opacity: 0;
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .feature-card:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .feature-card:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #30a2ff20, #75C2F620);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .feature-icon i {
+        font-size: 24px;
+        color: #30a2ff;
+        transition: all 0.3s ease;
+    }
+
+    .feature-card:hover .feature-icon {
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+    }
+
+    .feature-card:hover .feature-icon i {
+        color: white;
+    }
+
+    .feature-content {
+        flex: 1;
+    }
+
+    .feature-content h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    .feature-content p {
+        color: #666;
+        margin: 0;
+    }
+
+    .seo-image-wrapper {
+        position: relative;
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-image {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 120%;
+        height: auto;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .floating-elements {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .float-item {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        animation: floatIcon 4s ease-in-out infinite;
+    }
+
+    .float-item:nth-child(1) {
+        top: 15%;
+        left: 10%;
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        animation-delay: 0s;
+    }
+
+    .float-item:nth-child(2) {
+        top: 45%;
+        right: 15%;
+        background: linear-gradient(135deg, #FF6B6B, #FFE66D);
+        animation-delay: 1s;
+        width: 45px;
+        height: 45px;
+    }
+
+    .float-item:nth-child(3) {
+        bottom: 20%;
+        left: 20%;
+        background: linear-gradient(135deg, #4ECDC4, #45B7AF);
+        animation-delay: 2s;
+        width: 50px;
+        height: 50px;
+    }
+
+    .float-item:nth-child(4) {
+        top: 30%;
+        right: 25%;
+        background: linear-gradient(135deg, #FF8C94, #FF6B6B);
+        animation-delay: 1.5s;
+        width: 40px;
+        height: 40px;
+    }
+
+    .float-item:nth-child(5) {
+        bottom: 35%;
+        left: 15%;
+        background: linear-gradient(135deg, #A8E6CF, #4ECDC4);
+        animation-delay: 2.5s;
+        width: 35px;
+        height: 35px;
+    }
+
+    .float-item i {
+        color: white;
+        font-size: 24px;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes floatIcon {
+        0%, 100% {
+            transform: translate(0, 0) rotate(0deg);
+        }
+        50% {
+            transform: translate(15px, -15px) rotate(10deg);
+        }
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-right {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all 0.8s ease-out;
+    }
+
+    .fade-left {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: all 0.8s ease-out;
+    }
+
+    .fade-right.active,
+    .fade-left.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    @media (max-width: 991px) {
+        .seo-image-wrapper {
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .plans-section .section-title {
+        position: relative;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+        text-align: center;
+        animation: fadeInDown 1s ease-out;
+    }
+
+    .plans-section .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #30a2ff, #75C2F6);
+        animation: lineGrowCenter 1.5s ease-out forwards;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes lineGrowCenter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100px;
+        }
+    }
+
+    .plans-section h2.text-center {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fade-up {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    </style>
+
+    @push('scripts')
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        document.querySelectorAll('.fade-right, .fade-left').forEach((el) => {
+            observer.observe(el);
+        });
+    });
+    </script>
+    @endpush
 @endsection
 
 @push('scripts')

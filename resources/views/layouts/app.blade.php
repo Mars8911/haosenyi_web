@@ -37,7 +37,7 @@
                         <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="/">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('plans*') ? 'active' : '' }}" href="/plans">方案說明</a>
+                        <a class="nav-link {{ request()->is('plans*') ? 'active' : '' }}" href="/plans">網站方案</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('portfolio*') ? 'active' : '' }}" href="/portfolio">作品案例</a>
@@ -77,7 +77,7 @@
                 <div class="col-md-4">
                     <h5 class="text-primary">快速連結</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/plans" class="text-decoration-none">方案說明</a></li>
+                        <li><a href="/plans" class="text-decoration-none">網站方案</a></li>
                         <li><a href="/portfolio" class="text-decoration-none">作品案例</a></li>
                         <li><a href="/blog" class="text-decoration-none">最新消息</a></li>
                     </ul>
