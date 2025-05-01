@@ -126,7 +126,7 @@
                                     <i class="fas fa-tachometer-alt"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3>技術面優化</h3>
+                                    <h3 class="gradient-text">技術面優化</h3>
                                     <p>網站速度與結構優化，提升使用者體驗</p>
                                 </div>
                             </div>
@@ -135,7 +135,7 @@
                                     <i class="fas fa-file-alt"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3>內容策略</h3>
+                                    <h3 class="gradient-text">內容策略</h3>
                                     <p>專業的標題與內容撰寫策略</p>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                                     <i class="fas fa-search"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3>搜尋曝光</h3>
+                                    <h3 class="gradient-text">搜尋曝光</h3>
                                     <p>關鍵字佈局與成效追蹤分析</p>
                                 </div>
                             </div>
@@ -799,6 +799,35 @@
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    .gradient-text {
+        background: linear-gradient(135deg, #30a2ff 0%, #75C2F6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .gradient-text::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #30a2ff 0%, #75C2F6 100%);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover .gradient-text::after {
+        transform: scaleX(1);
     }
     </style>
 
