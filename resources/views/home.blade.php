@@ -250,38 +250,70 @@
         </div>
     </section>
 
-    <!-- Advantages Section -->
-    <section class="advantages-section py-5">
+    <!-- 我們的服務 Section -->
+    <section class="feature-service-section py-5 position-relative" style="background: linear-gradient(135deg, #e6f4ff 0%, #f6fbff 100%);">
         <div class="container">
-            <h2 class="text-center section-title">我們的優勢</h2>
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6">
-                    <img src="https://via.placeholder.com/600x400" alt="專業團隊" class="img-fluid rounded">
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="h4 mb-3">專業團隊</h3>
-                    <p>我們擁有經驗豐富的設計師和開發團隊，能夠為您打造最適合的網站解決方案。</p>
-                    <ul class="list-unstyled">
-                        <li>✓ 專業的UI/UX設計</li>
-                        <li>✓ 響應式網頁設計</li>
-                        <li>✓ SEO優化服務</li>
-                        <li>✓ 完善的售後服務</li>
-                    </ul>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="feature-section-subtitle">OUR SERVICE</span>
+                    <h2 class="feature-section-title mb-3">我們的服務</h2>
+                    <p class="feature-section-desc">專業團隊為您提供一站式數位解決方案，從網站設計、SEO、AI 銷售到數位行銷，協助品牌數位轉型與成長。</p>
                 </div>
             </div>
-            <div class="row align-items-center flex-row-reverse">
-                <div class="col-lg-6">
-                    <img src="https://via.placeholder.com/600x400" alt="品質保證" class="img-fluid rounded">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-card-modern h-100 text-center p-4">
+                        <div class="feature-img-modern mb-3">
+                            <img src="{{ asset('images/service-1.png') }}" alt="網站設計與開發" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
+                        </div>
+                        <h4 class="feature-title-modern gradient-title">網站設計與開發</h4>
+                        <p class="feature-desc-modern">我們專注於為企業打造專業且具吸引力的網站，從企業形象網站到電子商務平台，皆可量身訂做，確保您的網站在各種裝置上都能完美呈現。</p>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="h4 mb-3">品質保證</h3>
-                    <p>我們堅持提供高品質的服務，確保每個專案都能達到客戶的期望。</p>
-                    <ul class="list-unstyled">
-                        <li>✓ 嚴格的品質控管</li>
-                        <li>✓ 完整的測試流程</li>
-                        <li>✓ 即時的技術支援</li>
-                        <li>✓ 定期的系統更新</li>
-                    </ul>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card-modern h-100 text-center p-4">
+                        <div class="feature-img-modern mb-3">
+                            <img src="{{ asset('images/service-2.png') }}" alt="搜尋引擎優化" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
+                        </div>
+                        <h4 class="feature-title-modern gradient-title">搜尋引擎優化（SEO）</h4>
+                        <p class="feature-desc-modern">透過關鍵字策略、網站結構優化與內容行銷，提升您的網站在搜尋引擎中的排名，增加曝光度，吸引更多潛在客戶。</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card-modern h-100 text-center p-4">
+                        <div class="feature-img-modern mb-3">
+                            <img src="{{ asset('images/service-3.png') }}" alt="AI 銷售解決方案" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
+                        </div>
+                        <h4 class="feature-title-modern gradient-title">AI 銷售解決方案</h4>
+                        <p class="feature-desc-modern">結合人工智慧技術，提供智能化的銷售工具，如聊天機器人、自動化行銷流程等，協助您提升銷售效率與客戶滿意度。</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card-modern h-100 text-center p-4">
+                        <div class="feature-img-modern mb-3">
+                            <img src="{{ asset('images/service-4.png') }}" alt="客製化後台系統開發" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
+                        </div>
+                        <h4 class="feature-title-modern gradient-title">客製化後台系統開發</h4>
+                        <p class="feature-desc-modern">根據您的業務需求，開發專屬的後台管理系統，讓您輕鬆管理網站內容、訂單、客戶資料等，提高營運效率。</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card-modern h-100 text-center p-4">
+                        <div class="feature-img-modern mb-3">
+                            <img src="{{ asset('images/service-5.png') }}" alt="網站維護與技術支援" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
+                        </div>
+                        <h4 class="feature-title-modern gradient-title">網站維護與技術支援</h4>
+                        <p class="feature-desc-modern">提供網站日常維護、功能更新與技術支援服務，確保您的網站穩定運行，並隨時應對各種技術挑戰。</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card-modern h-100 text-center p-4">
+                        <div class="feature-img-modern mb-3">
+                            <img src="{{ asset('images/service-6.png') }}" alt="電子商務平台建置與整合" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
+                        </div>
+                        <h4 class="feature-title-modern gradient-title">電子商務平台建置與整合</h4>
+                        <p class="feature-desc-modern">為您打造完整的電子商務解決方案，從購物車、金流、物流到庫存管理系統，提供一站式服務，協助您快速建立並管理線上商店。</p>
+                    </div>
                 </div>
             </div>
         </div>
