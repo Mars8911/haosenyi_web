@@ -171,7 +171,7 @@
         </div>
     </section>
 
-    <!-- App Development Section -->
+    <!-- AI 銷售客服系統串接 Section -->
     <section class="app-service-section py-5 position-relative overflow-hidden">
         <div class="section-bg-pattern"></div>
         <div class="container">
@@ -194,13 +194,13 @@
                         </div>
                         <div class="floating-elements">
                             <div class="float-item" style="--delay: 0s">
-                                <i class="fab fa-apple"></i>
+                                <i class="fas fa-headset"></i>
                             </div>
                             <div class="float-item" style="--delay: 1s">
-                                <i class="fab fa-android"></i>
+                                <i class="fas fa-bullhorn"></i>
                             </div>
                             <div class="float-item" style="--delay: 2s">
-                                <i class="fas fa-code"></i>
+                                <i class="fas fa-plug"></i>
                             </div>
                         </div>
                     </div>
@@ -208,41 +208,41 @@
                 <div class="col-lg-6 fade-right">
                     <div class="app-content pe-lg-4">
                         <div class="section-header mb-4">
-                            <span class="subtitle">跨平台開發</span>
-                            <h2 class="section-title">App 跨平台開發解決方案</h2>
+                            <span class="subtitle">AI 串接服務</span>
+                            <h2 class="section-title">AI 銷售客服系統串接</h2>
                         </div>
-                        <p class="lead mb-5 text-light">我們提供從 UI 設計、後台 API 到 iOS/Android App 的完整開發服務，讓您的應用程式在各個平台完美運行。</p>
+                        <p class="lead mb-5 text-light">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
                         <div class="app-features">
                             <div class="feature-item mb-4 d-flex align-items-start">
                                 <div class="feature-icon">
-                                    <i class="fas fa-mobile-alt fa-2x"></i>
+                                    <i class="fas fa-headset fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">Flutter 跨平台方案</h3>
-                                    <p class="text-light-gray">採用 Flutter 技術，一次開發即可同時支援 iOS 與 Android 平台，節省開發成本與時間。</p>
+                                    <h3 class="gradient-text h5 mb-2">多平台即時客服</h3>
+                                    <p class="text-light-gray">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
                                 </div>
                             </div>
                             <div class="feature-item mb-4 d-flex align-items-start">
                                 <div class="feature-icon">
-                                    <i class="fas fa-server fa-2x"></i>
+                                    <i class="fas fa-bullhorn fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">Laravel 後端 API</h3>
-                                    <p class="text-light-gray">使用 Laravel 框架打造穩定安全的後端 API，確保資料傳輸的安全性與效能。</p>
+                                    <h3 class="gradient-text h5 mb-2">AI 智能銷售推播</h3>
+                                    <p class="text-light-gray">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
                                 </div>
                             </div>
                             <div class="feature-item d-flex align-items-start">
                                 <div class="feature-icon">
-                                    <i class="fas fa-layer-group fa-2x"></i>
+                                    <i class="fas fa-plug fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">多元應用開發</h3>
-                                    <p class="text-light-gray">提供商務、預約、電商等多種應用開發，打造專屬於您的 App 解決方案。</p>
+                                    <h3 class="gradient-text h5 mb-2">API 彈性串接</h3>
+                                    <p class="text-light-gray">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-5">
-                            <a href="/contact" class="btn btn-gradient btn-lg">免費諮詢</a>
+                            <a href="/contact" class="btn btn-gradient btn-lg">立即諮詢</a>
                         </div>
                     </div>
                 </div>
