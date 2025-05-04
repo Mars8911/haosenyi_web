@@ -254,9 +254,9 @@
     <section class="feature-service-section py-5 position-relative" style="background: linear-gradient(135deg, #e6f4ff 0%, #f6fbff 100%);">
         <div class="container">
             <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center fade-up">
+                <div class="col-lg-8 text-center fade-up delay-8">
                     <span class="feature-section-subtitle d-block">OUR SERVICE</span>
-                    <h2 class="feature-section-title mb-3">我們的服務</h2>
+                    <h2 class="feature-section-title mb-3 fade-up ">我們的服務</h2>
                     <p class="feature-section-desc">專業團隊為您提供一站式數位解決方案，從網站設計、SEO、AI 銷售到數位行銷，協助品牌數位轉型與成長。</p>
                 </div>
             </div>
@@ -269,7 +269,7 @@
                         <h4 class="feature-title-modern gradient-title">網站設計與開發</h4>
                         <p class="feature-desc-modern">我們專注於為企業打造專業且具吸引力的網站，從企業形象網站到電子商務平台，皆可量身訂做，確保您的網站在各種裝置上都能完美呈現。</p>
                     </div>
-                </div>
+                </div>  
                 <div class="col-md-6 col-lg-4">
                     <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.15s;">
                         <div class="feature-img-modern mb-3">
@@ -1025,24 +1025,23 @@
     });
     </script>
     @endpush
-@endsection
 
-@push('scripts')
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // 監聽滾動事件
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
+    @push('scripts')
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-up').forEach(function(el) {
+            observer.observe(el);
         });
-    }, {
-        threshold: 0.1 // 當元素出現 10% 時觸發
     });
-
-    // 監聽所有需要動畫的元素
-    document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
-});
-</script>
-@endpush 
+    </script>
+    @endpush
+@endsection 
