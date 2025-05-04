@@ -420,4 +420,63 @@ html, body {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+/* 服務標題漸層色 */
+.gradient-title {
+    background: linear-gradient(90deg, #30a2ff 0%, #75C2F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+/* 服務區塊背景美化 */
+.feature-service-section {
+    position: relative;
+    background: linear-gradient(135deg, #e6f4ff 0%, #f6fbff 100%);
+    overflow: hidden;
+}
+.feature-service-section::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #30a2ff22 0%, transparent 70%);
+    z-index: 0;
+}
+.feature-service-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, #75C2F622 0%, transparent 70%);
+    z-index: 0;
+}
+.feature-service-section > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* 卡片動畫（如未用 AOS.js 也有進場效果） */
+.feature-card-modern {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUpCard 0.8s ease forwards;
+    animation-delay: var(--delay, 0s);
+}
+@keyframes fadeUpCard {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 } 

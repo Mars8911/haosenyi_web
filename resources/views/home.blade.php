@@ -261,8 +261,8 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-                    <div class="feature-card-modern h-100 text-center p-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0s;">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/webservice.png') }}" alt="網站設計與開發" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
@@ -270,8 +270,8 @@
                         <p class="feature-desc-modern">我們專注於為企業打造專業且具吸引力的網站，從企業形象網站到電子商務平台，皆可量身訂做，確保您的網站在各種裝置上都能完美呈現。</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-card-modern h-100 text-center p-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.15s;">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/seoservice.png') }}" alt="搜尋引擎優化" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
@@ -279,8 +279,8 @@
                         <p class="feature-desc-modern">透過關鍵字策略、網站結構優化與內容行銷，提升您的網站在搜尋引擎中的排名，增加曝光度，吸引更多潛在客戶。</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-card-modern h-100 text-center p-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.3s;">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/aiservice.png') }}" alt="AI 銷售解決方案" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
@@ -288,8 +288,8 @@
                         <p class="feature-desc-modern">結合人工智慧技術，提供智能化的銷售工具，如聊天機器人、自動化行銷流程等，協助您提升銷售效率與客戶滿意度。</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-card-modern h-100 text-center p-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.45s;">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/codedev.png') }}" alt="客製化後台系統開發" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
@@ -297,8 +297,8 @@
                         <p class="feature-desc-modern">根據您的業務需求，開發專屬的後台管理系統，讓您輕鬆管理網站內容、訂單、客戶資料等，提高營運效率。</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-card-modern h-100 text-center p-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.6s;">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/maintenance.png') }}" alt="網站維護與技術支援" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
@@ -306,8 +306,8 @@
                         <p class="feature-desc-modern">提供網站日常維護、功能更新與技術支援服務，確保您的網站穩定運行，並隨時應對各種技術挑戰。</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-card-modern h-100 text-center p-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.75s;">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/shopping.png') }}" alt="電子商務平台建置與整合" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
