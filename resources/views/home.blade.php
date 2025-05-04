@@ -254,8 +254,8 @@
     <section class="feature-service-section py-5 position-relative" style="background: linear-gradient(135deg, #e6f4ff 0%, #f6fbff 100%);">
         <div class="container">
             <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <span class="feature-section-subtitle">OUR SERVICE</span>
+                <div class="col-lg-8 text-center fade-up">
+                    <span class="feature-section-subtitle d-block">OUR SERVICE</span>
                     <h2 class="feature-section-title mb-3">我們的服務</h2>
                     <p class="feature-section-desc">專業團隊為您提供一站式數位解決方案，從網站設計、SEO、AI 銷售到數位行銷，協助品牌數位轉型與成長。</p>
                 </div>
@@ -497,7 +497,7 @@
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        /* left: 0; */
         width: 0;
         height: 3px;
         background: linear-gradient(90deg, #30a2ff, #75C2F6);
