@@ -25,12 +25,13 @@
     </section>
 
     <!--網站設計方案-->
-    <section class="plans-section py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center section-title py-4 fade-up">網站方案</h2>
+    <section class="plans-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #050d1b 0%, #101828 100%);">
+        <div id="vanta-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+        <div class="container position-relative" style="z-index:1;">
+            <h2 class="text-center section-title py-4 fade-up" style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">網站方案</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-basic.svg') }}" alt="超值方案示意圖">
                         </div>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-custom.svg') }}" alt="形象網站示意圖">
                         </div>
@@ -68,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-ecommerce.svg') }}" alt="購物車方案示意圖">
                         </div>
@@ -88,7 +89,7 @@
                 </div>
                 
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-enterprise.svg') }}" alt="客製化專案示意圖">
                         </div>
@@ -1044,6 +1045,24 @@
             observer.observe(el);
         });
     });
+    </script>
+    @endpush
+
+    @push('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+    if (window.VANTA) {
+      VANTA.WAVES({
+        el: "#vanta-bg",
+        color: 0x30a2ff,
+        shininess: 50,
+        waveHeight: 20,
+        waveSpeed: 1,
+        zoom: 1.2,
+        backgroundColor: 0x050d1b
+      });
+    }
     </script>
     @endpush
 @endsection 
