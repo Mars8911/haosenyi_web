@@ -24,10 +24,10 @@
         </div>
     </section>
 
-    <!-- Plans Section -->
+    <!--網站設計方案-->
     <section class="plans-section py-5 bg-light">
         <div class="container">
-            <h2 class="text-center section-title py-4 fade-up">方案介紹</h2>
+            <h2 class="text-center section-title py-4 fade-up">網站方案</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up">
@@ -111,8 +111,9 @@
     </section>
 
     <!-- SEO Service Section -->
-    <section class="seo-service-section py-5">
-        <div class="container">
+    <section class="seo-service-section py-5" style="background: linear-gradient(135deg, #e6f4ff 0%, #f0f8ff 100%); position: relative; overflow: hidden;">
+        <div class="seo-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(rgba(48, 162, 255, 0.08) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.6; z-index: 0;"></div>
+        <div class="container position-relative" style="z-index: 1;">
             <div class="row align-items-center">
                 <div class="col-lg-6 fade-right">
                     <div class="seo-content">
@@ -251,8 +252,9 @@
     </section>
 
     <!-- 我們的服務 Section -->
-    <section class="feature-service-section py-5 position-relative" style="background: linear-gradient(135deg, #e6f4ff 0%, #f6fbff 100%);">
-        <div class="container">
+    <section class="feature-service-section py-5 position-relative" style="background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 50%, #d9e9ff 100%);">
+        <div class="service-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(45deg, rgba(48, 162, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(48, 162, 255, 0.05) 50%, rgba(48, 162, 255, 0.05) 75%, transparent 75%, transparent); background-size: 30px 30px; opacity: 0.4; z-index: 0;"></div>
+        <div class="container position-relative" style="z-index: 1;">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center fade-up delay-8">
                     <span class="feature-section-subtitle d-block">OUR SERVICE</span>
