@@ -24,92 +24,6 @@
         </div>
     </section>
 
-    <!--網站設計方案-->
-    <section class="plans-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #050d1b 0%, #101828 100%);">
-        <div id="vanta-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
-        <div class="container position-relative" style="z-index:1;">
-            <h2 class="text-center section-title py-4 fade-up" style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">網站方案</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-basic.svg') }}" alt="超值方案示意圖">
-                        </div>
-                        <span class="plan-number">01</span>
-                        <div class="card-body">
-                            <h3 class="card-title h5">8800超值方案</h3>
-                            <p class="card-text text-primary fw-bold">NT$8,800 起</p>
-                            <ul class="list-unstyled">
-                                <li>響應式網站設計</li>
-                                <li>5個頁面以內</li>
-                                <li>基本SEO優化</li>
-                                <li>一年免費維護</li>
-                            </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-custom.svg') }}" alt="形象網站示意圖">
-                        </div>
-                        <span class="plan-number">02</span>
-                        <div class="card-body">
-                            <h3 class="card-title h5">半客製形象網站</h3>
-                            <p class="card-text text-primary fw-bold">NT$36,800 起</p>
-                            <ul class="list-unstyled">
-                                <li>客製化設計</li>
-                                <li>10個頁面以內</li>
-                                <li>進階SEO優化</li>
-                                <li>一年免費維護</li>
-                            </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-ecommerce.svg') }}" alt="購物車方案示意圖">
-                        </div>
-                        <span class="plan-number">03</span>
-                        <div class="card-body">
-                            <h3 class="card-title h5">模組購物車方案</h3>
-                            <p class="card-text text-primary fw-bold">NT$45,000 起</p>
-                            <ul class="list-unstyled">
-                                <li>完整購物車功能</li>
-                                <li>金流串接</li>
-                                <li>訂單管理系統</li>
-                                <li>會員管理系統</li>
-                            </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-enterprise.svg') }}" alt="客製化專案示意圖">
-                        </div>
-                        <span class="plan-number">04</span>
-                        <div class="card-body">
-                            <h3 class="card-title h5">客製化網站專案</h3>
-                            <p class="card-text text-primary fw-bold">依功能報價</p>
-                            <ul class="list-unstyled">
-                                <li>完全客製化開發</li>
-                                <li>特殊功能開發</li>
-                                <li>系統整合</li>
-                                <li>長期技術支援</li>
-                            </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- SEO Service Section -->
     <section class="seo-service-section py-5" style="background: linear-gradient(135deg, #e6f4ff 0%, #f0f8ff 100%); position: relative; overflow: hidden;">
@@ -1050,17 +964,20 @@
 
     @push('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script>
     if (window.VANTA) {
-      VANTA.WAVES({
+      VANTA.NET({
         el: "#vanta-bg",
         color: 0x30a2ff,
-        shininess: 50,
-        waveHeight: 20,
-        waveSpeed: 1,
-        zoom: 1.2,
-        backgroundColor: 0x050d1b
+        backgroundColor: 0x050d1b,
+        points: 12.0,
+        maxDistance: 22.0,
+        spacing: 18.0,
+        showDots: true,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false
       });
     }
     </script>
