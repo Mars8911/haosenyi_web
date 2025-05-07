@@ -26,13 +26,21 @@
 
     
     <!--網站設計方案-->
-    <section class="plans-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #050d1b 0%, #101828 100%);">
-        <div id="vanta-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+    <section class="plans-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #e6f4ff 0%, #b3e0ff 50%, #80c1ff 100%);">
+        <!-- 背景動態效果 -->
+        <div class="position-absolute w-100 h-100" style="top:0;left:0;background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 0h20v20H0z" fill="%2330a2ff" fill-opacity="0.05"/%3E%3C/svg%3E');"></div>
+        
+        <!-- 左側裝飾圖形 -->
+        <div class="position-absolute floating-shape" style="left:-5%;top:10%;width:300px;height:300px;background:linear-gradient(45deg, rgba(48,162,255,0.1), rgba(48,162,255,0.05));border-radius:50%;"></div>
+        
+        <!-- 右側裝飾圖形 -->
+        <div class="position-absolute floating-shape" style="right:-5%;bottom:10%;width:400px;height:400px;background:linear-gradient(-45deg, rgba(48,162,255,0.1), rgba(48,162,255,0.05));border-radius:50%;"></div>
+
         <div class="container position-relative" style="z-index:1;">
-            <h2 class="text-center section-title py-4 fade-up" style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">網站方案</h2>
+            <h2 class="text-center section-title py-4 fade-up gradient-title-codepulse">網站方案</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-basic.svg') }}" alt="超值方案示意圖">
                         </div>
@@ -51,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-custom.svg') }}" alt="形象網站示意圖">
                         </div>
@@ -70,7 +78,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-ecommerce.svg') }}" alt="購物車方案示意圖">
                         </div>
@@ -89,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
                             <img src="{{ asset('images/plan-enterprise.svg') }}" alt="客製化專案示意圖">
                         </div>
@@ -109,10 +117,10 @@
                 </div>
             </div>
         </div>
-        <!-- 下方 SVG 波浪分隔，貼近下緣且不超過背景一半 -->
-        <div style="position:absolute;left:0;right:0;bottom:-1px;z-index:2;line-height:0;">
-            <svg viewBox="0 0 1920 60" width="100%" height="60" preserveAspectRatio="none" style="display:block;">
-                <path d="M0,40 Q480,60 960,40 T1920,40 V60H0Z" fill="#fff"/>
+        <!-- 下方波浪效果 -->
+        <div style="position:absolute;left:0;right:0;bottom:-41px;z-index:2;line-height:0;">
+            <svg viewBox="0 0 1920 80" width="100%" height="80" preserveAspectRatio="none" style="display:block;">
+                <path d="M0,40 Q480,80 960,40 T1920,40 V80H0Z" fill="#e6f4ff" fill-opacity="1"/>
             </svg>
         </div>
     </section>
@@ -165,7 +173,7 @@
                         <div class="floating-elements">
                             <div class="float-item" style="--delay: 0s">
                                 <i class="fas fa-chart-bar"></i>
-                            </div>
+                            </div>ㄉ
                             <div class="float-item" style="--delay: 1s">
                                 <i class="fas fa-search"></i>
                             </div>
@@ -1014,6 +1022,65 @@
         .phone-frame {
             transform: scale(0.9);
         }
+    }
+
+    /* 浮動動畫效果 */
+    .floating-shape {
+        animation: float 10s ease-in-out infinite;
+    }
+
+    .floating-shape:nth-child(2) {
+        animation-delay: -5s;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0) scale(1);
+        }
+        50% {
+            transform: translateY(-30px) scale(1.05);
+        }
+    }
+
+    /* 優化卡片樣式 */
+    .plan-card {
+        background: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(48, 162, 255, 0.1) !important;
+        transition: all 0.4s ease;
+    }
+
+    .plan-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(48, 162, 255, 0.15);
+    }
+
+    /* 優化背景漸層動畫 */
+    .plans-section {
+        background: linear-gradient(135deg, #e6f4ff 0%, #b3e0ff 50%, #80c1ff 100%);
+        background-size: 200% 200%;
+        animation: gradientBG 20s ease infinite;
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .gradient-title-codepulse {
+        background: linear-gradient(90deg, #1565c0 0%, #2196f3 50%, #009e8e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
     }
     </style>
 
