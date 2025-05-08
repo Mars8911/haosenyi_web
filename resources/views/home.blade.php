@@ -337,15 +337,15 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- 成功案例 -->
     <section class="portfolio-section py-5 bg-light">
         <div class="container">
             <h2 class="text-center section-title">成功案例</h2>
             <div class="row g-4">
                 @for($i = 0; $i < 6; $i++)
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="案例圖片">
+                    <div class="card h-100 fade-up portfolio-card">
+                        <img src="{{ asset('images/webdemo.jpg') }}" class="card-img-top" alt="案例圖片">
                         <div class="card-body">
                             <h3 class="card-title h5">案例標題</h3>
                             <p class="card-text">產業分類</p>
@@ -1081,6 +1081,22 @@
         background-clip: text;
         color: transparent;
         display: inline-block;
+    }
+
+    .portfolio-card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .portfolio-card.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .portfolio-card:hover {
+        box-shadow: 0 12px 32px rgba(48,162,255,0.18), 0 2px 8px rgba(0,0,0,0.08);
+        transform: translateY(-8px) scale(1.03);
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 2;
     }
     </style>
 
