@@ -165,7 +165,7 @@
                             <span class="subtitle">AI 串接服務</span>
                             <h2 class="section-title gradient-title-multi">AI 銷售客服系統串接</h2>
                         </div>
-                        <p class="lead mb-5 text-light">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
+                        <p class="lead mb-5 text-dark">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
                         <div class="app-features">
                             <div class="feature-item mb-4 d-flex align-items-start">
                                 <div class="feature-icon">
@@ -173,7 +173,7 @@
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">多平台即時客服</h3>
-                                    <p class="text-light-gray">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
+                                    <p class="text-dark">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
                                 </div>
                             </div>
                             <div class="feature-item mb-4 d-flex align-items-start">
@@ -182,7 +182,7 @@
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">AI 智能銷售推播</h3>
-                                    <p class="text-light-gray">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
+                                    <p class="text-dark">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
                                 </div>
                             </div>
                             <div class="feature-item d-flex align-items-start">
@@ -191,7 +191,7 @@
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">API 彈性串接</h3>
-                                    <p class="text-light-gray">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
+                                    <p class="text-dark">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
                                 </div>
                             </div>
                         </div>
@@ -360,12 +360,47 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- 立即開始表單 -->
     <section class="cta-section py-5">
-        <div class="container text-center">
-            <h2 class="section-title">立即開始您的網站專案</h2>
-            <p class="lead mb-4">讓我們為您打造最具效益的專業網站</p>
-            <a href="/contact" class="btn btn-primary btn-lg">免費諮詢</a>
+        <div class="container">
+            <div class="cta-form-wrapper">
+                <div class="cta-form-title">立即開始您的網站專案</div>
+                <form action="/contact" method="POST" class="cta-form mt-3">
+                    @csrf
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="name" class="form-label">姓名 <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="phone" class="form-label">電話 <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="demand" class="form-label">需求 <span class="text-danger">*</span></label>
+                            <select class="form-select" id="demand" name="demand" required>
+                                <option value="">請選擇需求</option>
+                                <option value="8800超值方案">8800超值方案</option>
+                                <option value="半客製形象網站">半客製形象網站</option>
+                                <option value="模組購物車方案">模組購物車方案</option>
+                                <option value="客製化網站專案">客製化網站專案</option>
+                                <option value="AI銷售客服系統">AI銷售客服系統</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">留言</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-send"><i class="fas fa-paper-plane"></i>送出表單</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -1106,6 +1141,74 @@
         color: transparent !important;
         font-weight: 700 !important;
         display: inline-block !important;
+    }
+
+    .cta-form-wrapper {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(48,162,255,0.10);
+        padding: 40px 32px 32px 32px;
+        max-width: 520px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .cta-form-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        position: relative;
+        display: inline-block;
+    }
+    .cta-form-title:after {
+        content: '';
+        display: block;
+        width: 48px;
+        height: 4px;
+        background: linear-gradient(90deg, #30a2ff 0%, #75C2F6 100%);
+        border-radius: 2px;
+        margin-top: 8px;
+    }
+    .cta-form .form-control, .cta-form .form-select {
+        border: 1.5px solid #e0e7ef;
+        border-radius: 8px;
+        background: #f8fafc;
+        font-size: 1.08rem;
+        padding: 0.75rem 1rem;
+        transition: border-color 0.2s;
+    }
+    .cta-form .form-control:focus, .cta-form .form-select:focus {
+        border-color: #30a2ff;
+        background: #fff;
+        box-shadow: 0 0 0 2px #30a2ff22;
+    }
+    .cta-form label {
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+    }
+    .cta-form .btn-send {
+        background: linear-gradient(90deg, #30a2ff 0%, #75C2F6 100%);
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
+        padding: 0.75rem 2.5rem 0.75rem 2rem;
+        font-size: 1.15rem;
+        position: relative;
+        transition: box-shadow 0.2s, background 0.2s;
+        box-shadow: 0 4px 16px rgba(48,162,255,0.10);
+    }
+    .cta-form .btn-send i {
+        margin-right: 0.5rem;
+        font-size: 1.1em;
+    }
+    .cta-form .btn-send:hover {
+        background: linear-gradient(90deg, #75C2F6 0%, #30a2ff 100%);
+        box-shadow: 0 8px 24px rgba(48,162,255,0.18);
+    }
+    @media (max-width: 600px) {
+        .cta-form-wrapper { padding: 24px 8px; }
+        .cta-form-title { font-size: 1.3rem; }
     }
     </style>
 
