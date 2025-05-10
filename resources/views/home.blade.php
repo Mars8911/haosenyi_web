@@ -120,13 +120,91 @@
         <!-- 下方波浪效果 -->
         <div style="position:absolute;left:0;right:0;bottom:-41px;z-index:2;line-height:0;">
             <svg viewBox="0 0 1920 80" width="100%" height="80" preserveAspectRatio="none" style="display:block;">
-                <path d="M0,40 Q480,80 960,40 T1920,40 V80H0Z" fill="#e6f4ff" fill-opacity="1"/>
+                <path d="M0,40 Q480,80 960,40 T1920,40 V80H0Z" fill="#a2d2ff" fill-opacity="1"/>
             </svg>
         </div>
     </section>
 
+    <!-- AI 銷售客服系統串接 Section -->
+    <section class="app-service-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #a2d2ff 0%, #bde0fe 50%, #cdb4db 100%);">
+        <div class="section-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.6; z-index: 0;"></div>
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-left">
+                    <div class="app-showcase position-relative">
+                        <div class="app-preview">
+                            <div class="phone-frame">
+                                <div class="screen">
+                                    <div class="app-interface">
+                                        <div class="app-header"></div>
+                                        <div class="app-content">
+                                            <div class="content-block"></div>
+                                            <div class="content-block"></div>
+                                            <div class="content-block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="float-item" style="--delay: 0s">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="float-item" style="--delay: 1s">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="float-item" style="--delay: 2s">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-right">
+                    <div class="app-content pe-lg-4">
+                        <div class="section-header mb-4">
+                            <span class="subtitle">AI 串接服務</span>
+                            <h2 class="section-title gradient-title-multi">AI 銷售客服系統串接</h2>
+                        </div>
+                        <p class="lead mb-5 text-light">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
+                        <div class="app-features">
+                            <div class="feature-item mb-4 d-flex align-items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset fa-2x"></i>
+                                </div>
+                                <div class="feature-content ms-4">
+                                    <h3 class="gradient-text h5 mb-2">多平台即時客服</h3>
+                                    <p class="text-light-gray">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
+                                </div>
+                            </div>
+                            <div class="feature-item mb-4 d-flex align-items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bullhorn fa-2x"></i>
+                                </div>
+                                <div class="feature-content ms-4">
+                                    <h3 class="gradient-text h5 mb-2">AI 智能銷售推播</h3>
+                                    <p class="text-light-gray">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
+                                </div>
+                            </div>
+                            <div class="feature-item d-flex align-items-start">
+                                <div class="feature-icon">
+                                    <i class="fas fa-plug fa-2x"></i>
+                                </div>
+                                <div class="feature-content ms-4">
+                                    <h3 class="gradient-text h5 mb-2">API 彈性串接</h3>
+                                    <p class="text-light-gray">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <a href="/contact" class="btn btn-gradient btn-lg">立即諮詢</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- SEO Service Section -->
+    <!-- SEO 關鍵字優化 Section -->
     <section class="seo-service-section py-5" style="background: linear-gradient(135deg, #e6f4ff 0%, #f0f8ff 100%); position: relative; overflow: hidden;">
         <div class="seo-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(rgba(48, 162, 255, 0.08) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.6; z-index: 0;"></div>
         <div class="container position-relative" style="z-index: 1;">
@@ -134,7 +212,7 @@
                 <div class="col-lg-6 fade-right">
                     <div class="seo-content">
                         <div class="section-header">
-                            <h2 class="section-title">SEO 關鍵字優化</h2>
+                            <h2 class="section-title gradient-title-multi">SEO 關鍵字優化</h2>
                         </div>
                         <p class="lead text-muted mb-5">從網站架構、標題、內文與速度全面優化，提升 Google 搜尋排名</p>
                         <div class="seo-features">
@@ -182,85 +260,6 @@
                             </div>
                         </div>
                         <img src="{{ asset('images/seo.png') }}" alt="SEO 分析儀表板" class="img-fluid main-image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI 銷售客服系統串接 Section -->
-    <section class="app-service-section py-5 position-relative overflow-hidden">
-        <div class="section-bg-pattern"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 fade-left">
-                    <div class="app-showcase position-relative">
-                        <div class="app-preview">
-                            <div class="phone-frame">
-                                <div class="screen">
-                                    <div class="app-interface">
-                                        <div class="app-header"></div>
-                                        <div class="app-content">
-                                            <div class="content-block"></div>
-                                            <div class="content-block"></div>
-                                            <div class="content-block"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="floating-elements">
-                            <div class="float-item" style="--delay: 0s">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <div class="float-item" style="--delay: 1s">
-                                <i class="fas fa-bullhorn"></i>
-                            </div>
-                            <div class="float-item" style="--delay: 2s">
-                                <i class="fas fa-plug"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-right">
-                    <div class="app-content pe-lg-4">
-                        <div class="section-header mb-4">
-                            <span class="subtitle">AI 串接服務</span>
-                            <h2 class="section-title">AI 銷售客服系統串接</h2>
-                        </div>
-                        <p class="lead mb-5 text-light">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
-                        <div class="app-features">
-                            <div class="feature-item mb-4 d-flex align-items-start">
-                                <div class="feature-icon">
-                                    <i class="fas fa-headset fa-2x"></i>
-                                </div>
-                                <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">多平台即時客服</h3>
-                                    <p class="text-light-gray">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
-                                </div>
-                            </div>
-                            <div class="feature-item mb-4 d-flex align-items-start">
-                                <div class="feature-icon">
-                                    <i class="fas fa-bullhorn fa-2x"></i>
-                                </div>
-                                <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">AI 智能銷售推播</h3>
-                                    <p class="text-light-gray">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
-                                </div>
-                            </div>
-                            <div class="feature-item d-flex align-items-start">
-                                <div class="feature-icon">
-                                    <i class="fas fa-plug fa-2x"></i>
-                                </div>
-                                <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">API 彈性串接</h3>
-                                    <p class="text-light-gray">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <a href="/contact" class="btn btn-gradient btn-lg">立即諮詢</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -369,7 +368,6 @@
             <a href="/contact" class="btn btn-primary btn-lg">免費諮詢</a>
         </div>
     </section>
-
 
     <style>
     .brand-culture-section {
@@ -858,9 +856,9 @@
     }
 
     .app-service-section {
-        background: linear-gradient(135deg, #1a1f25 0%, #2c3e50 100%);
+        background: linear-gradient(135deg, #a2d2ff 0%, #bde0fe 50%, #cdb4db 100%);
         z-index: 1;
-        color: #fff;
+        color: #333;
     }
 
     .section-bg-pattern {
@@ -887,27 +885,27 @@
         letter-spacing: 1px;
         margin-bottom: 1rem;
         display: block;
-        color: #75C2F6;
+        color: #333;
     }
 
     .section-header .section-title {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
-        background: linear-gradient(135deg, #75C2F6, #30a2ff);
+        background: linear-gradient(135deg, #333, #666);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
     .text-light-gray {
-        color: rgba(255,255,255,0.8);
+        color: rgba(51, 51, 51, 0.8);
     }
 
     .feature-icon {
         width: 60px;
         height: 60px;
-        background: rgba(117, 194, 246, 0.1);
+        background: rgba(255, 255, 255, 0.2);
         border-radius: 15px;
         display: flex;
         align-items: center;
@@ -916,11 +914,11 @@
     }
 
     .feature-icon i {
-        color: #75C2F6;
+        color: #333;
     }
 
     .feature-item:hover .feature-icon {
-        background: linear-gradient(135deg, #75C2F6, #30a2ff);
+        background: linear-gradient(135deg, #a2d2ff, #bde0fe);
     }
 
     .feature-item:hover .feature-icon i {
@@ -928,9 +926,9 @@
     }
 
     .btn-gradient {
-        background: linear-gradient(135deg, #75C2F6, #30a2ff);
+        background: linear-gradient(135deg, #a2d2ff, #bde0fe);
         border: none;
-        color: white;
+        color: #333;
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -939,7 +937,8 @@
 
     .btn-gradient:hover {
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(117, 194, 246, 0.3);
+        box-shadow: 0 5px 15px rgba(162, 210, 255, 0.3);
+        color: #333;
     }
 
     .phone-frame {
@@ -1097,6 +1096,16 @@
         transform: translateY(-8px) scale(1.03);
         transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
         z-index: 2;
+    }
+
+    .gradient-title-multi {
+        background: linear-gradient(90deg, #2563eb 0%, #38bdf8 40%, #34d399 80%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+        color: transparent !important;
+        font-weight: 700 !important;
+        display: inline-block !important;
     }
     </style>
 

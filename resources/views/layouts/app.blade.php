@@ -37,13 +37,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="/">首頁</a>
+                        <a class="nav-link @if(request()->routeIs('home')) active @endif" href="{{ route('home') }}">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('plans*') ? 'active' : '' }}" href="/plans">網站方案</a>
+                        <a class="nav-link @if(request()->routeIs('plans')) active @endif" href="{{ route('plans') }}">網站方案</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('portfolio*') ? 'active' : '' }}" href="/portfolio">作品案例</a>
+                        <a class="nav-link @if(request()->routeIs('ai-system')) active @endif" href="{{ route('ai-system') }}">AI網站系統</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if(request()->routeIs('portfolio')) active @endif" href="{{ route('portfolio') }}">作品案例</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('about*') ? 'active' : '' }}" href="/about">關於我們</a>
