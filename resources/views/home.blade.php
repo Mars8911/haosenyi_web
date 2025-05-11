@@ -361,9 +361,10 @@
     </section>
 
     <!-- 立即開始表單 -->
-    <section class="cta-section py-5">
-        <div class="container">
-            <div class="cta-form-wrapper">
+    <section class="cta-section py-5 position-relative overflow-hidden" style="background:#0a1833;">
+        <div id="cta-vanta-bg" style="position:absolute;left:0;top:0;width:100%;height:100%;z-index:0;"></div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="cta-form-wrapper animate-fadeup">
                 <div class="cta-form-title">立即開始您的網站專案</div>
                 <form action="/contact" method="POST" class="cta-form mt-3">
                     @csrf
@@ -1210,6 +1211,45 @@
         .cta-form-wrapper { padding: 24px 8px; }
         .cta-form-title { font-size: 1.3rem; }
     }
+    .cta-bg-line {
+      position: absolute;
+      left: 0; right: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .cta-bg-line.line1 {
+      bottom: 18%;
+      animation: moveLine1 6s cubic-bezier(0.4,0.2,0.6,0.8) infinite alternate;
+    }
+    .cta-bg-line.line2 {
+      bottom: 6%;
+      animation: moveLine2 7s cubic-bezier(0.4,0.2,0.6,0.8) infinite alternate;
+    }
+    @keyframes moveLine1 {
+      0% { transform: translateX(0) translateY(0) scaleX(1); opacity: 0.7; }
+      50% { transform: translateX(60px) translateY(-12px) scaleX(1.04); opacity: 1; }
+      100% { transform: translateX(-60px) translateY(8px) scaleX(0.98); opacity: 0.7; }
+    }
+    @keyframes moveLine2 {
+      0% { transform: translateX(0) translateY(0) scaleX(1); opacity: 0.5; }
+      50% { transform: translateX(-80px) translateY(10px) scaleX(1.06); opacity: 0.8; }
+      100% { transform: translateX(80px) translateY(-10px) scaleX(0.95); opacity: 0.5; }
+    }
+    .cta-bg-anim .dot {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.7;
+        animation: floatDot 4s ease-in-out infinite alternate;
+        background: radial-gradient(circle, #fff8 0%, #fff0 80%);
+    }
+    .cta-bg-anim .dot-lg { width: 48px; height: 48px; }
+    .cta-bg-anim .dot-md { width: 32px; height: 32px; }
+    .cta-bg-anim .dot-sm { width: 18px; height: 18px; }
+    .cta-bg-anim .dot-blue { background: radial-gradient(circle, #30a2ff55 0%, #30a2ff00 80%); opacity: 0.5; }
+    @keyframes floatDot {
+        0% { transform: translateY(0) scale(1); opacity: 0.7; }
+        100% { transform: translateY(-38px) scale(1.18); opacity: 1; }
+    }
     </style>
 
     @push('scripts')
@@ -1255,20 +1295,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script>
-    if (window.VANTA) {
-      VANTA.NET({
-        el: "#vanta-bg",
-        color: 0x30a2ff,
-        backgroundColor: 0x050d1b,
-        points: 12.0,
-        maxDistance: 22.0,
-        spacing: 18.0,
-        showDots: true,
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false
-      });
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.VANTA) {
+        VANTA.NET({
+          el: '#cta-vanta-bg',
+          color: 0x38bdf8,
+          backgroundColor: 0x0a1833,
+          points: 14.0,
+          maxDistance: 22.0,
+          spacing: 18.0,
+          showDots: true,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false
+        });
+      }
+    });
     </script>
     @endpush
 @endsection 
