@@ -251,7 +251,7 @@
                         <div class="floating-elements">
                             <div class="float-item" style="--delay: 0s">
                                 <i class="fas fa-chart-bar"></i>
-                            </div>ㄉ
+                            </div>
                             <div class="float-item" style="--delay: 1s">
                                 <i class="fas fa-search"></i>
                             </div>
@@ -1299,11 +1299,11 @@
       if (window.VANTA) {
         VANTA.NET({
           el: '#cta-vanta-bg',
-          color: 0x38bdf8,
+          color: 0x00eaff,
           backgroundColor: 0x0a1833,
-          points: 14.0,
-          maxDistance: 22.0,
-          spacing: 18.0,
+          points: 22.0,
+          maxDistance: 28.0,
+          spacing: 16.0,
           showDots: true,
           mouseControls: true,
           touchControls: true,
