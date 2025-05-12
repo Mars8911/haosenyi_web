@@ -361,8 +361,21 @@
     </section>
 
     <!-- 立即開始表單 -->
-    <section class="cta-section py-5 position-relative overflow-hidden" style="background:#0a1833;">
-        <div id="cta-vanta-bg" style="position:absolute;left:0;top:0;width:100%;height:100%;z-index:0;"></div>
+    <section class="cta-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #014f86 0%, #2c7da0 100%);">
+        <!-- 背景圖片層 -->
+        <div class="cta-bg-img"></div>
+        <!-- AI 客服 icon 浮動動畫背景 -->
+        <div class="cta-ai-icons-bg">
+            <div class="cta-ai-icon ai1"><i class="fas fa-robot"></i></div>
+            <div class="cta-ai-icon ai2"><i class="fas fa-comments"></i></div>
+            <div class="cta-ai-icon ai3"><i class="fas fa-headset"></i></div>
+            <div class="cta-ai-icon ai4"><i class="fas fa-brain"></i></div>
+            <div class="cta-ai-icon ai5"><i class="fas fa-bolt"></i></div>
+            <div class="cta-ai-icon ai6"><i class="fas fa-cloud"></i></div>
+            <div class="cta-ai-icon ai10"><i class="fas fa-laptop-code"></i></div>
+            <div class="cta-ai-icon ai12"><i class="fas fa-layer-group"></i></div>
+            <div class="cta-ai-icon ai13"><i class="fas fa-mouse-pointer"></i></div>
+        </div>
         <div class="container position-relative" style="z-index:2;">
             <div class="cta-form-wrapper animate-fadeup">
                 <div class="cta-form-title">立即開始您的網站專案</div>
@@ -1250,6 +1263,90 @@
         0% { transform: translateY(0) scale(1); opacity: 0.7; }
         100% { transform: translateY(-38px) scale(1.18); opacity: 1; }
     }
+    /* 粒子動畫背景 */
+    .cta-particles-bg {
+        position: absolute;
+        left: 0; top: 0; width: 100%; height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    .cta-particles-bg {
+        background: none;
+    }
+    .cta-particle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.18);
+        box-shadow: 0 0 8px #fff8;
+        animation: ctaParticleMove 12s linear infinite;
+    }
+    /* 產生 18 個不同大小、位置、動畫延遲的粒子 */
+    .cta-particle.p1 { width: 12px; height: 12px; left: 8%; top: 18%; animation-delay: 0s; }
+    .cta-particle.p2 { width: 8px; height: 8px; left: 22%; top: 38%; animation-delay: 2s; }
+    .cta-particle.p3 { width: 16px; height: 16px; left: 35%; top: 12%; animation-delay: 4s; }
+    .cta-particle.p4 { width: 10px; height: 10px; left: 48%; top: 28%; animation-delay: 1s; }
+    .cta-particle.p5 { width: 14px; height: 14px; left: 60%; top: 8%; animation-delay: 3s; }
+    .cta-particle.p6 { width: 7px; height: 7px; left: 75%; top: 22%; animation-delay: 5s; }
+    .cta-particle.p7 { width: 11px; height: 11px; left: 88%; top: 18%; animation-delay: 2.5s; }
+    .cta-particle.p8 { width: 9px; height: 9px; left: 15%; top: 65%; animation-delay: 6s; }
+    .cta-particle.p9 { width: 13px; height: 13px; left: 30%; top: 80%; animation-delay: 7s; }
+    .cta-particle.p10 { width: 8px; height: 8px; left: 45%; top: 70%; animation-delay: 4.5s; }
+    .cta-particle.p11 { width: 10px; height: 10px; left: 58%; top: 60%; animation-delay: 8s; }
+    .cta-particle.p12 { width: 12px; height: 12px; left: 70%; top: 75%; animation-delay: 9s; }
+    .cta-particle.p13 { width: 7px; height: 7px; left: 82%; top: 68%; animation-delay: 10s; }
+    .cta-particle.p14 { width: 15px; height: 15px; left: 90%; top: 80%; animation-delay: 11s; }
+    .cta-particle.p15 { width: 9px; height: 9px; left: 10%; top: 85%; animation-delay: 5.5s; }
+    .cta-particle.p16 { width: 13px; height: 13px; left: 55%; top: 90%; animation-delay: 7.5s; }
+    .cta-particle.p17 { width: 8px; height: 8px; left: 80%; top: 50%; animation-delay: 3.5s; }
+    .cta-particle.p18 { width: 11px; height: 11px; left: 65%; top: 40%; animation-delay: 6.5s; }
+    @keyframes ctaParticleMove {
+        0% { transform: translateY(0) scale(1); opacity: 0.7; }
+        50% { transform: translateY(-40px) scale(1.15); opacity: 1; }
+        100% { transform: translateY(0) scale(1); opacity: 0.7; }
+    }
+    .cta-ai-icons-bg {
+        position: absolute;
+        left: 0; top: 0; width: 100%; height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    .cta-ai-icon {
+        position: absolute;
+        color: #fff;
+        opacity: 0.18;
+        font-size: 3rem;
+        filter: blur(0.5px);
+        animation: ctaAIFloat 8s ease-in-out infinite;
+    }
+    .cta-ai-icon.ai1 { left: 10%; top: 20%; animation-delay: 0s; }
+    .cta-ai-icon.ai2 { left: 75%; top: 18%; animation-delay: 2s; }
+    .cta-ai-icon.ai3 { left: 20%; top: 70%; animation-delay: 1.5s; }
+    .cta-ai-icon.ai4 { left: 60%; top: 60%; animation-delay: 3s; }
+    .cta-ai-icon.ai5 { left: 40%; top: 35%; animation-delay: 4s; }
+    .cta-ai-icon.ai6 { left: 85%; top: 75%; animation-delay: 5s; }
+    .cta-ai-icon.ai7 { left: 30%; top: 60%; animation-delay: 2.2s; color: #fffbe0; opacity: 0.21; }
+    .cta-ai-icon.ai8 { left: 80%; top: 30%; animation-delay: 3.7s; color: #ffe066; opacity: 0.20; }
+    .cta-ai-icon.ai9 { left: 50%; top: 80%; animation-delay: 5.1s; color: #ffd166; opacity: 0.19; }
+    .cta-ai-icon.ai10 { left: 65%; top: 10%; animation-delay: 1.8s; color: #fff; opacity: 0.18; }
+    .cta-ai-icon.ai11 { left: 80%; top: 30%; animation-delay: 3.7s; color: #ffe066; opacity: 0.20; }
+    .cta-ai-icon.ai12 { left: 50%; top: 80%; animation-delay: 5.1s; color: #ffd166; opacity: 0.19; }
+    .cta-ai-icon.ai13 { left: 65%; top: 10%; animation-delay: 1.8s; color: #fff; opacity: 0.18; }
+    @keyframes ctaAIFloat {
+        0% { transform: translateY(0) scale(1); opacity: 0.18; }
+        50% { transform: translateY(-30px) scale(1.12); opacity: 0.28; }
+        100% { transform: translateY(0) scale(1); opacity: 0.18; }
+    }
+    .cta-bg-img {
+        position: absolute;
+        left: 0; top: 0; width: 100%; height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        background: url('/images/cta-bg.jpg') center center/cover no-repeat;
+        opacity: 0.13;
+        filter: blur(2px) grayscale(30%);
+    }
     </style>
 
     @push('scripts')
@@ -1313,4 +1410,18 @@
     });
     </script>
     @endpush
+
+    <script>
+    // 動態產生粒子 DOM
+    document.addEventListener('DOMContentLoaded', function() {
+        var bg = document.querySelector('.cta-particles-bg');
+        if(bg && bg.children.length === 0) {
+            for(var i=1;i<=18;i++) {
+                var dot = document.createElement('div');
+                dot.className = 'cta-particle p'+i;
+                bg.appendChild(dot);
+            }
+        }
+    });
+    </script>
 @endsection 
