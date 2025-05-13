@@ -25,7 +25,7 @@
     </section>
 
     
-    <!--網站設計方案-->
+    <!--AI 網站設計方案-->
     <section class="plans-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #e6f4ff 0%, #b3e0ff 50%, #80c1ff 100%);">
         <!-- 背景動態效果 -->
         <div class="position-absolute w-100 h-100" style="top:0;left:0;background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 0h20v20H0z" fill="%2330a2ff" fill-opacity="0.05"/%3E%3C/svg%3E');"></div>
@@ -37,7 +37,7 @@
         <div class="position-absolute floating-shape" style="right:-5%;bottom:10%;width:400px;height:400px;background:linear-gradient(-45deg, rgba(48,162,255,0.1), rgba(48,162,255,0.05));border-radius:50%;"></div>
 
         <div class="container position-relative" style="z-index:1;">
-            <h2 class="text-center section-title py-4 fade-up gradient-title-codepulse">網站方案</h2>
+            <h2 class="text-center section-title py-4 fade-up gradient-title-codepulse">AI 網站方案</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
@@ -46,8 +46,8 @@
                         </div>
                         <span class="plan-number">01</span>
                         <div class="card-body">
-                            <h3 class="card-title h5">8800超值方案</h3>
-                            <p class="card-text text-primary fw-bold">NT$8,800 起</p>
+                            <h3 class="card-title h5">7800超值方案</h3>
+                            <p class="card-text text-primary fw-bold">NT$7,800 起</p>
                             <ul class="list-unstyled">
                                 <li>響應式網站設計</li>
                                 <li>5個頁面以內</li>
@@ -481,10 +481,13 @@
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
 
-    .section-title {
-        position: relative;
-        padding-bottom: 1rem;
-        margin-bottom: 2rem;
+    .section-title,
+    .gradient-title,
+    .gradient-title-multi,
+    h2,
+    h3 {
+        color: #fff !important;
+        text-shadow: 0 2px 12px rgba(0,0,0,0.18), 0 1px 0 #2563eb33;
     }
 
     .section-title:after {
@@ -1042,7 +1045,7 @@
 
     .float-item i {
         font-size: 1.5rem;
-        color: #75C2F6;
+        color:rgb(255, 255, 255);
     }
 
     @keyframes float {
