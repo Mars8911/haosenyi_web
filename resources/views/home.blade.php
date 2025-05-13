@@ -126,7 +126,7 @@
     </section>
 
     <!-- AI 銷售客服系統串接 Section -->
-    <section class="app-service-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #a2d2ff 0%, #bde0fe 50%, #cdb4db 100%);">
+    <section class="app-service-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #00509d 0%, #2563eb 50%, #38bdf8 100%);">
         <div class="section-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.6; z-index: 0;"></div>
         <div class="container position-relative" style="z-index: 1;">
             <div class="row align-items-center">
@@ -905,7 +905,7 @@
     }
 
     .app-service-section {
-        background: linear-gradient(135deg, #a2d2ff 0%, #bde0fe 50%, #cdb4db 100%);
+        background: linear-gradient(135deg, #00509d 0%, #2563eb 50%, #38bdf8 100%);
         z-index: 1;
         color: #333;
     }

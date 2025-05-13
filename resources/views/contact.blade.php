@@ -7,7 +7,7 @@
     <section class="contact-header py-5 bg-light">
         <div class="container text-center">
             <h1 class="section-title">聯絡我們</h1>
-            <p class="lead">歡迎與我們聯繫，我們將為您提供專業的建議</p>
+            <p class="lead">歡迎與我們聯繫，我們將為您提供專業的建議</p>    
         </div>
     </section>
 
@@ -19,7 +19,7 @@
                     @if(session('success'))
                         <div class="alert alert-success">
                             {{ session('success') }}
-                        </div>
+                        </div>  
                     @endif
                     <form action="{{ route('contact.store') }}" method="POST">
                         @csrf
