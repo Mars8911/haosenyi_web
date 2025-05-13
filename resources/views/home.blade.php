@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', '好森逸網站設計 - 專業網站設計服務')
-@section('description', '好森逸網站設計提供專業的網站設計服務，包括企業網站、電商網站、形象網站等，為您打造最適合的網站')
+@section('title', '好森逸行銷科技 - 專業網站設計服務')
+@section('description', '好森逸行銷科技提供專業的網站設計服務，包括企業網站、電商網站、形象網站等，為您打造最適合的網站')
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -54,7 +54,7 @@
                                 <li>基本SEO優化</li>
                                 <li>一年免費維護</li>
                             </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                                 <li>進階SEO優化</li>
                                 <li>一年免費維護</li>
                             </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                                 <li>訂單管理系統</li>
                                 <li>會員管理系統</li>
                             </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                                 <li>系統整合</li>
                                 <li>長期技術支援</li>
                             </ul>
-                            <a href="/plans" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>

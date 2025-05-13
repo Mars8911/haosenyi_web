@@ -8,7 +8,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AiSystemController;
+use App\Http\Controllers\AiSolutionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,14 +22,14 @@ use App\Http\Controllers\AiSystemController;
 
 // 公開路由
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/plans', [PlanController::class, 'index'])->name('plans');
+Route::get('/ai-web-solution', [PlanController::class, 'index'])->name('ai-web-solution');
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-Route::get('/ai-system', [AiSystemController::class, 'index'])->name('ai-system');
+Route::get('/ai-solution', [AiSolutionController::class, 'index'])->name('ai-solution');
 
 // 管理後台路由
 Route::prefix('admin')->group(function () {

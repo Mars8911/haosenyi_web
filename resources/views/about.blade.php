@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', '關於我們 - 好森逸網站設計')
-@section('description', '好森逸網站設計提供專業的網站設計服務，擁有豐富的經驗和專業的團隊')
+@section('title', '關於我們 - 好森逸行銷科技')
+@section('description', '好森逸行銷科技提供專業的網站設計服務，擁有豐富的經驗和專業的團隊')
 
 @section('content')
     <section class="about-header py-5 bg-light">

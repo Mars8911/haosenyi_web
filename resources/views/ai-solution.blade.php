@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'AI網站系統 - 智慧數位平台')
+@section('title', 'AI 智能整合方案 - 智慧數位平台')
 @section('description', '結合AI與網站技術，打造專屬智慧數位平台，AI客服、行銷自動化、數據分析、API串接一站式服務。')
 
 @push('styles')
@@ -38,7 +38,7 @@
 <!-- Hero 區塊 -->
 <section class="ai-hero-bg">
     <div class="container">
-        <h1 class="gradient-title-multi display-4 mb-3">AI網站系統</h1>
+        <h1 class="gradient-title-multi display-4 mb-3">AI 智能整合方案</h1>
         <p class="lead mb-4">結合 AI 與網站技術，打造智慧數位平台</p>
         <a href="/contact" class="btn btn-gradient btn-lg me-2">立即諮詢</a>
         <a href="#ai-features" class="btn btn-outline-primary btn-lg">了解更多</a>

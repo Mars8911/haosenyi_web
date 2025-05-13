@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', '作品集 - 好森逸網站設計')
-@section('description', '好森逸網站設計的精選作品集，展示我們為各行各業打造的專業網站')
+@section('title', '作品集 - 好森逸行銷科技')
+@section('description', '好森逸行銷科技的精選作品集，展示我們為各行各業打造的專業網站')
 
 @section('content')
     <section class="portfolio-header py-5 bg-light">

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', '好森逸網站設計')</title>
-    <meta name="description" content="@yield('description', '好森逸網站設計，堅持以超值的價格，打造最具效益的專業網站')">
+    <title>@yield('title', '好森逸行銷科技')</title>
+    <meta name="description" content="@yield('description', '好森逸行銷科技，堅持以超值的價格，打造最具效益的專業網站')">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">好森逸網站設計</a>
+            <a class="navbar-brand" href="/">好森逸行銷科技</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,10 +40,10 @@
                         <a class="nav-link @if(request()->routeIs('home')) active @endif" href="{{ route('home') }}">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @if(request()->routeIs('plans')) active @endif" href="{{ route('plans') }}">網站方案</a>
+                        <a class="nav-link @if(request()->routeIs('ai-web-solution')) active @endif" href="{{ route('ai-web-solution') }}">AI 網站方案</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @if(request()->routeIs('ai-system')) active @endif" href="{{ route('ai-system') }}">AI網站系統</a>
+                        <a class="nav-link @if(request()->routeIs('ai-solution')) active @endif" href="{{ route('ai-solution') }}">AI 智能整合方案</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @if(request()->routeIs('portfolio')) active @endif" href="{{ route('portfolio') }}">作品案例</a>
@@ -72,7 +72,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5 class="text-primary">好森逸網站設計</h5>
+                    <h5 class="text-primary">好森逸行銷科技</h5>
                     <p>堅持以超值的價格，打造最具效益的專業網站</p>
                 </div>
                 <div class="col-md-4">
@@ -83,13 +83,13 @@
                 <div class="col-md-4">
                     <h5 class="text-primary">快速連結</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/plans" class="text-decoration-none">網站方案</a></li>
+                        <li><a href="/ai-web-solution" class="text-decoration-none">網站方案</a></li>
                         <li><a href="/portfolio" class="text-decoration-none">作品案例</a></li>
                         <li><a href="/blog" class="text-decoration-none">最新消息</a></li>
                     </ul>
                 </div>
             </div>
-            <p class="mt-3 mb-0">&copy; {{ date('Y') }} 好森逸網站設計. All rights reserved.</p>
+            <p class="mt-3 mb-0">&copy; {{ date('Y') }} 好森逸行銷科技. All rights reserved.</p>
         </div>
     </footer>
 
