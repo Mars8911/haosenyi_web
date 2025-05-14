@@ -158,10 +158,8 @@
     filter: brightness(0) invert(1);
     transition: filter 0.3s;
 }
-.plan-card:hover .plan-img-bg img,
-.plan-card:focus-within .plan-img-bg img {
-    filter: brightness(1) invert(0) drop-shadow(0 0 8px #fff);
-}
+
+
 .plan-card .plan-number {
     position: absolute;
     top: 20px;

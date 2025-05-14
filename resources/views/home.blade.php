@@ -33,7 +33,7 @@
 
     
     <!--AI 網站設計方案-->
-    <section class="plans-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #e6f4ff 0%, #b3e0ff 50%, #80c1ff 100%);">
+    <section class="plans-section position-relative overflow-hidden" style="background: #fff; padding-top: 5.8rem; padding-bottom: 5.8rem;">
         <!-- 背景動態效果 -->
         <div class="position-absolute w-100 h-100" style="top:0;left:0;background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 0h20v20H0z" fill="%2330a2ff" fill-opacity="0.05"/%3E%3C/svg%3E');"></div>
         
@@ -44,12 +44,16 @@
         <div class="position-absolute floating-shape" style="right:-5%;bottom:10%;width:400px;height:400px;background:linear-gradient(-45deg, rgba(48,162,255,0.1), rgba(48,162,255,0.05));border-radius:50%;"></div>
 
         <div class="container position-relative" style="z-index:1;">
-            <h2 class="text-center section-title py-4 fade-up gradient-title-codepulse">AI 網站方案</h2>
+            <h2 class="text-center section-title py-4 fade-up">AI 網站方案</h2>
+            <p class="text-center mb-5 text-muted" style="font-size:1.15rem;color:#1e96fc;font-weight:500;line-height:1.7;">
+                不只是架站，更是幫你找客戶、回留言、提升成交率的 AI 智能網站服務<br>
+                依需求選擇最適合您的方案，快速上線、效果看得見！
+            </p>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-basic.svg') }}" alt="超值方案示意圖">
+                            <img src="{{ asset('images/improvement.png') }}" alt="超值方案示意圖">
                         </div>
                         <span class="plan-number">01</span>
                         <div class="card-body">
@@ -68,7 +72,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-custom.svg') }}" alt="形象網站示意圖">
+                            <img src="{{ asset('images/web-designing.png') }}" alt="形象網站示意圖">
                         </div>
                         <span class="plan-number">02</span>
                         <div class="card-body">
@@ -87,7 +91,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-ecommerce.svg') }}" alt="購物車方案示意圖">
+                            <img src="{{ asset('images/ecommerce.png') }}" alt="購物車方案示意圖">
                         </div>
                         <span class="plan-number">03</span>
                         <div class="card-body">
@@ -106,7 +110,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="plan-card card h-100 position-relative fade-up" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(15px); border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transform: translateY(0); transition: all 0.3s ease;">
                         <div class="plan-img-bg">
-                            <img src="{{ asset('images/plan-enterprise.svg') }}" alt="客製化專案示意圖">
+                            <img src="{{ asset('images/launch.png') }}" alt="客製化專案示意圖">
                         </div>
                         <span class="plan-number">04</span>
                         <div class="card-body">
@@ -496,8 +500,7 @@
     .gradient-title-multi,
     h2,
     h3 {
-        color: #fff !important;
-        text-shadow: 0 2px 12px rgba(0,0,0,0.18), 0 1px 0 #2563eb33;
+        color: #1e96fc !important;
     }
 
     .section-title:after {
@@ -1112,14 +1115,6 @@
         }
     }
 
-    .gradient-title-codepulse {
-        background: linear-gradient(90deg, #1565c0 0%, #2196f3 50%, #009e8e 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        display: inline-block;
-    }
 
     .portfolio-card {
         opacity: 0;
