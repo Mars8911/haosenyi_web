@@ -68,28 +68,55 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-light py-4">
+    <footer class="py-5 text-white" style="background-color: #003f88;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5 class="text-primary">好森逸行銷科技</h5>
-                    <p>堅持以超值的價格，打造最具效益的專業網站</p>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">好森逸行銷科技</h5>
+                    <p class="mb-3">推動 AI + 科技，打造智慧品牌</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5 class="text-primary">聯絡資訊</h5>
-                    <p>電話：{{ $contactInfo['phone'] }}</p>
-                    <p>Email：{{ $contactInfo['email'] }}</p>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="text-primary">快速連結</h5>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">服務項目</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/ai-web-solution" class="text-decoration-none">網站方案</a></li>
-                        <li><a href="/portfolio" class="text-decoration-none">作品案例</a></li>
-                        <li><a href="/blog" class="text-decoration-none">最新消息</a></li>
+                        <li class="mb-2"><a href="/ai-web-solution" class="text-white text-decoration-none">網站設計</a></li>
+                        <li class="mb-2"><a href="/ai-solution" class="text-white text-decoration-none">AI 整合</a></li>
+                        <li class="mb-2"><a href="/app-service" class="text-white text-decoration-none">APP 開發</a></li>
+                        <li class="mb-2"><a href="/seo-service" class="text-white text-decoration-none">SEO 優化</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">聯絡資訊</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>{{ $contactInfo['phone'] }}</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>{{ $contactInfo['email'] }}</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>221台灣新北市汐止區新台五路一段97號27 樓</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">快速連結</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/portfolio" class="text-white text-decoration-none">成功案例</a></li>
+                        <li class="mb-2"><a href="/blog" class="text-white text-decoration-none">最新消息</a></li>
+                        <li class="mb-2"><a href="/about" class="text-white text-decoration-none">關於我們</a></li>
+                        <li class="mb-2"><a href="/contact" class="text-white text-decoration-none">聯絡我們</a></li>
                     </ul>
                 </div>
             </div>
-            <p class="mt-3 mb-0">&copy; {{ date('Y') }} 好森逸行銷科技. All rights reserved.</p>
+            <hr class="my-4 border-light">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; {{ date('Y') }} 好森逸行銷科技. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="/privacy" class="text-white text-decoration-none me-3">隱私權政策</a>
+                    <a href="/terms" class="text-white text-decoration-none">服務條款</a>
+                </div>
+            </div>
         </div>
     </footer>
 
