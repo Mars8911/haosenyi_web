@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">AI 智能整合方案</h1>
+                    <h1 class="display-4 fw-bold mb-4" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">AI 智能整合方案</h1>
                     <p class="lead mb-4">不只是一個網站，而是一位 24 小時在線的智慧業務！<br>
                     結合 AI 銷售、智能推薦、客服預約、找尋客戶、數據分析，主動為您吸引客戶、提升成交、降低成本。</p>
                     <a href="/contact" class="btn btn-primary btn-lg">立即免費諮詢</a>
@@ -1081,7 +1081,7 @@
     .fade-up {
         opacity: 0;
         transform: translateY(20px);
-        animation: fadeUp 0.8s ease forwards;
+        animation: fadeUp 2.5s ease forwards;
     }
 
     @keyframes fadeUp {
@@ -1091,8 +1091,11 @@
         }
     }
 
-
-  
+    /* 為每個方案卡片設置不同的延遲時間 */
+    .plan-card:nth-child(1) { animation-delay: 0.8s; }
+    .plan-card:nth-child(2) { animation-delay: 1.2s; }
+    .plan-card:nth-child(3) { animation-delay: 1.6s; }
+    .plan-card:nth-child(4) { animation-delay: 2.0s; }
 
     .app-service-section {
         background: linear-gradient(135deg, #00509d 0%, #2563eb 50%, #38bdf8 100%);
