@@ -177,7 +177,7 @@
                     <div class="app-content pe-lg-4">
                         <div class="section-header mb-4">
                             <span class="subtitle text-white">AI Sales Intelligence Integration</span>
-                            <h2 class="text-white" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">AI 銷售智能整合方案</h2>
+                            <h2 class="text-white" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); font-size: 2.5rem;">AI 銷售智能整合方案</h2>
                         </div>
                         <p class="lead mb-5 text-white">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
                         <div class="app-features">
@@ -226,12 +226,13 @@
                 <div class="col-lg-6 fade-right">
                     <div class="seo-content">
                         <div class="section-header">
-                            <h2 class="section-title gradient-title-multi">SEO 關鍵字優化</h2>
+                            <h2 class="seo-title">SEO 關鍵字優化</h2>
+                            <div class="title-underline"></div>
                         </div>
                         <p class="lead text-muted mb-5">從網站架構、標題、內文與速度全面優化，提升 Google 搜尋排名</p>
                         <div class="seo-features">
                             <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="feature-icon">
+                                <div class="feature-icon seo-feature-icon">
                                     <i class="fas fa-tachometer-alt"></i>
                                 </div>
                                 <div class="feature-content">
@@ -240,7 +241,7 @@
                                 </div>
                             </div>
                             <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="feature-icon">
+                                <div class="feature-icon seo-feature-icon">
                                     <i class="fas fa-file-alt"></i>
                                 </div>
                                 <div class="feature-content">
@@ -249,7 +250,7 @@
                                 </div>
                             </div>
                             <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                                <div class="feature-icon">
+                                <div class="feature-icon seo-feature-icon">
                                     <i class="fas fa-search"></i>
                                 </div>
                                 <div class="feature-content">
@@ -1453,6 +1454,57 @@
     }
     .btn-shake {
         animation: shake 0.8s ease-in-out;
+    }
+
+    .seo-title {
+        position: relative;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1e96fc;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .title-underline {
+        position: relative;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #30a2ff, #75C2F6);
+        margin: 0 auto;
+        animation: lineGrow 1.5s ease-out forwards;
+    }
+
+    @keyframes lineGrow {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100px;
+        }
+    }
+
+    .seo-feature-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #00509d, #2563eb);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .seo-feature-icon i {
+        font-size: 24px;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    .feature-card:hover .seo-feature-icon {
+        background: linear-gradient(135deg, #2563eb, #38bdf8);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 80, 157, 0.2);
     }
     </style>
 
