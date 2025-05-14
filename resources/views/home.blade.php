@@ -18,7 +18,7 @@
                     <a href="/contact" class="btn btn-primary btn-lg">立即諮詢</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('images/banner-pc.png') }}" alt="網站設計示意圖" class="img-fluid">
+                    <img src="{{ asset('images/mac.png') }}" alt="網站設計示意圖" class="img-fluid">
                 </div>
             </div>
         </div>
