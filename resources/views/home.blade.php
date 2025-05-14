@@ -13,8 +13,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">打造最具效益的專業網站</h1>
-                    <p class="lead mb-4">堅持以超值的價格，為您打造最具效益的專業網站。從初期的網站企劃、功能評估，到結案後的客戶服務，我們都是五星好評！</p>
+                    <h1 class="display-4 fw-bold mb-4">AI 智能整合方案</h1>
+                    <p class="lead mb-4">導入 AI 技術，讓網站不只是展示，更能主動行銷、智慧應對，全面升級您的品牌體驗。</p>
                     <a href="/contact" class="btn btn-primary btn-lg">立即諮詢</a>
                 </div>
                 <div class="col-lg-6">
@@ -138,9 +138,12 @@
                                     <div class="app-interface">
                                         <div class="app-header"></div>
                                         <div class="app-content">
-                                            <div class="content-block"></div>
-                                            <div class="content-block"></div>
-                                            <div class="content-block"></div>
+                                            <div class="mac-dialog-area">
+                                                <div class="chat-bubble ai-message">AI銷售客服 : 歡迎您來到 好森逸 !</div>
+                                                <div class="chat-bubble user-message">客戶 : 請問您有OOO商品嗎 ?</div>
+                                                <div class="chat-bubble ai-message">AI銷售客服 : 有的 為您量身打造我們的商品、並推薦我們的新產品給您，請告訴我您的 需求 我們立刻為您推薦。</div>
+                                                <div class="chat-bubble user-message">太好了 !</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1349,6 +1352,94 @@
         background: url('/images/cta-bg.jpg') center center/cover no-repeat;
         opacity: 0.13;
         filter: blur(2px) grayscale(30%);
+    }
+
+    /* 聊天容器樣式 */
+    .chat-container {
+        padding: 20px;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    /* 聊天泡泡基本樣式 */
+    .chat-bubble {
+        max-width: 80%;
+        margin-bottom: 15px;
+        opacity: 0;
+        transform: translateX(50px);
+        animation: slideIn 0.5s ease forwards;
+    }
+
+    /* AI 訊息樣式 */
+    .ai-message {
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        color: white;
+        border-radius: 15px 15px 15px 0;
+        padding: 12px 16px;
+        margin-right: auto;
+    }
+
+    /* 用戶訊息樣式 */
+    .user-message {
+        background: #f0f2f5;
+        color: #333;
+        border-radius: 15px 15px 0 15px;
+        padding: 12px 16px;
+        margin-left: auto;
+    }
+
+    /* 訊息內容樣式 */
+    .message-content {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* 動畫效果 */
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* 為每個訊息設置不同的動畫延遲 */
+    .chat-bubble:nth-child(1) {
+        animation-delay: 0.5s;
+    }
+
+    .chat-bubble:nth-child(2) {
+        animation-delay: 1.5s;
+    }
+
+    .chat-bubble:nth-child(3) {
+        animation-delay: 2.5s;
+    }
+
+    .chat-bubble:nth-child(4) {
+        animation-delay: 3.5s;
+    }
+
+    /* 打字機效果 */
+    .typing-effect {
+        overflow: hidden;
+        border-right: 2px solid #fff;
+        white-space: nowrap;
+        animation: typing 3.5s steps(40, end),
+                   blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #fff }
     }
     </style>
 
