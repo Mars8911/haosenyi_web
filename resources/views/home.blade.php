@@ -14,11 +14,18 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h1 class="display-4 fw-bold mb-4">AI 智能整合方案</h1>
-                    <p class="lead mb-4">導入 AI 技術，讓網站不只是展示，更能主動行銷、智慧應對，全面升級您的品牌體驗。</p>
-                    <a href="/contact" class="btn btn-primary btn-lg">立即諮詢</a>
+                    <p class="lead mb-4">不只是一個網站，而是一位 24 小時在線的智慧業務！<br>
+                    結合 AI 銷售、智能推薦、客服預約、找尋客戶、數據分析，主動為您吸引客戶、提升成交、降低成本。</p>
+                    <a href="/contact" class="btn btn-primary btn-lg">立即免費諮詢</a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 position-relative">
                     <img src="{{ asset('images/mac.png') }}" alt="網站設計示意圖" class="img-fluid">
+                    <div class="mac-dialog-area-on-img">
+                        <div class="chat-bubble ai-message">AI客服 : 歡迎來來到 好森逸 購物網站</div>
+                        <div class="chat-bubble user-message">客戶 : 請問你們有 OOO 商品跟服務嗎 ?</div>
+                        <div class="chat-bubble ai-message">AI客服 : 有的 讓我幫您找尋適合您的商品與量身打造您的需求 !</div>
+                        <div class="chat-bubble user-message">太好了 省下我大量時間 !</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1440,6 +1447,59 @@
     @keyframes blink-caret {
         from, to { border-color: transparent }
         50% { border-color: #fff }
+    }
+
+    .mac-dialog-area-on-img {
+    
+        position: absolute;
+        left: 21.5%;
+        top: 10.5%;
+        width: 70%;
+        height: 54%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        pointer-events: none;
+        overflow: hidden; /* 防止內容超出螢幕 */
+    }
+    .chat-bubble {
+        max-width: 70%;      /* 限制最大寬度 */
+        width: fit-content;  /* 讓泡泡寬度隨內容自動調整 */
+        word-break: break-all;
+        white-space: pre-line;
+        margin-bottom: 10px;
+        opacity: 0;
+        transform: translateX(50px);
+        animation: chatFadeIn 0.7s cubic-bezier(.4,1.4,.6,1) forwards;
+        box-sizing: border-box;
+    }
+    .chat-bubble:nth-child(1) { animation-delay: 0.3s; }
+    .chat-bubble:nth-child(2) { animation-delay: 1.1s; }
+    .chat-bubble:nth-child(3) { animation-delay: 1.9s; }
+    .chat-bubble:nth-child(4) { animation-delay: 2.7s; }
+    @keyframes chatFadeIn {
+        from { opacity: 0; transform: translateX(50px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    .ai-message {
+        background: linear-gradient(135deg, #30a2ff, #75C2F6);
+        color: white;
+        border-radius: 15px 15px 15px 0;
+        padding: 10px 14px;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    .user-message {
+          background: linear-gradient(135deg, #f72585, #ff477e);
+        color:  white;
+        border-radius: 15px 15px 0 15px;
+        padding: 10px 14px;
+        margin-left: auto;
+        font-size: 15px;
+    }
+    @media (max-width: 768px) {
+        .mac-dialog-area-on-img { font-size: 13px; }
+        .chat-bubble { max-width: 90%; }
     }
     </style>
 
