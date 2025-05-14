@@ -226,18 +226,19 @@
                 <div class="col-lg-6 fade-right">
                     <div class="seo-content">
                         <div class="section-header">
-                            <h2 class="seo-title">SEO 關鍵字優化</h2>
+                            <h2 class="seo-title" style="font-size:2.5rem; margin-top:2.5rem; margin-bottom:2.2rem;">SEO 關鍵字優化</h2>
                             <div class="title-underline"></div>
                         </div>
-                        <p class="lead text-muted mb-5">從網站架構、標題、內文與速度全面優化，提升 Google 搜尋排名</p>
+                        <p class="lead text-muted mb-5">我們從網站架構、標題策略、內容撰寫到網站速度，全面優化每一個 SEO 關鍵環節，
+                        幫助您在 Google 搜尋中脫穎而出，獲得更多曝光與自然流量。</p>
                         <div class="seo-features">
                             <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                                 <div class="feature-icon seo-feature-icon">
                                     <i class="fas fa-tachometer-alt"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="gradient-text">技術面優化</h3>
-                                    <p>網站速度與結構優化，提升使用者體驗</p>
+                                    <h3 class="gradient-text" style="font-size:1.6rem;">技術面優化</h3>
+                                    <p>優化網站載入速度、前後端結構與語意標籤，讓搜尋引擎更容易理解網站內容，同時提升訪客的瀏覽流暢度與體驗。</p>
                                 </div>
                             </div>
                             <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
@@ -245,8 +246,8 @@
                                     <i class="fas fa-file-alt"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="gradient-text">內容策略</h3>
-                                    <p>專業的標題與內容撰寫策略</p>
+                                    <h3 class="gradient-text" style="font-size:1.6rem;">內容策略</h3>
+                                    <p>依據搜尋趨勢規劃內容架構，精準設定標題、段落與關鍵字，打造對用戶與搜尋引擎都友善的優質內容。</p>
                                 </div>
                             </div>
                             <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
@@ -254,8 +255,8 @@
                                     <i class="fas fa-search"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="gradient-text">搜尋曝光</h3>
-                                    <p>關鍵字佈局與成效追蹤分析</p>
+                                    <h3 class="gradient-text" style="font-size:1.6rem;">搜尋曝光</h3>
+                                    <p>系統化佈局長尾與核心關鍵字，結合 SEO 工具追蹤點擊與排名變化，有效掌握網站在 Google 上的曝光成效。</p>
                                 </div>
                             </div>
                         </div>
