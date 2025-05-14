@@ -172,10 +172,10 @@
                 <div class="col-lg-6 fade-right">
                     <div class="app-content pe-lg-4">
                         <div class="section-header mb-4">
-                            <span class="subtitle">AI 串接服務</span>
-                            <h2 class="section-title gradient-title-multi">AI 銷售客服系統串接</h2>
+                            <span class="subtitle text-white">AI 串接服務</span>
+                            <h2 class="text-white">AI 銷售客服系統串接</h2>
                         </div>
-                        <p class="lead mb-5 text-dark">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
+                        <p class="lead mb-5 text-white">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
                         <div class="app-features">
                             <div class="feature-item mb-4 d-flex align-items-start">
                                 <div class="feature-icon">
@@ -183,7 +183,7 @@
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">多平台即時客服</h3>
-                                    <p class="text-dark">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
+                                    <p class="text-white">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
                                 </div>
                             </div>
                             <div class="feature-item mb-4 d-flex align-items-start">
@@ -192,7 +192,7 @@
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">AI 智能銷售推播</h3>
-                                    <p class="text-dark">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
+                                    <p class="text-white">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
                                 </div>
                             </div>
                             <div class="feature-item d-flex align-items-start">
@@ -201,7 +201,7 @@
                                 </div>
                                 <div class="feature-content ms-4">
                                     <h3 class="gradient-text h5 mb-2">API 彈性串接</h3>
-                                    <p class="text-dark">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
+                                    <p class="text-white">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
                                 </div>
                             </div>
                         </div>
@@ -518,13 +518,6 @@
         width: 100%;
     }
 
-    .section-header .section-title {
-        margin: 0;
-        font-size: 2.5rem;
-        background: linear-gradient(135deg, #30a2ff, #75C2F6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 
     .fade-right {
         opacity: 0;
@@ -617,13 +610,6 @@
         }
     }
 
-    .section-header .section-title {
-        margin: 0;
-        font-size: 2.5rem;
-        background: linear-gradient(135deg, #30a2ff, #75C2F6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 
     .feature-card {
         display: flex;
@@ -950,15 +936,6 @@
         color: #333;
     }
 
-    .section-header .section-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        background: linear-gradient(135deg, #333, #666);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
 
     .text-light-gray {
         color: rgba(51, 51, 51, 0.8);
@@ -1161,11 +1138,9 @@
     }
 
     .gradient-title-multi {
-        background: linear-gradient(90deg, #2563eb 0%, #38bdf8 40%, #34d399 80%) !important;
-        -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
         background-clip: text !important;
-        color: transparent !important;
+        color: while;
         font-weight: 700 !important;
         display: inline-block !important;
     }
