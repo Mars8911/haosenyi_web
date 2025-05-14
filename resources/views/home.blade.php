@@ -131,12 +131,12 @@
         <!-- 下方波浪效果 -->
         <div style="position:absolute;left:0;right:0;bottom:-41px;z-index:2;line-height:0;">
             <svg viewBox="0 0 1920 80" width="100%" height="80" preserveAspectRatio="none" style="display:block;">
-                <path d="M0,40 Q480,80 960,40 T1920,40 V80H0Z" fill="#a2d2ff" fill-opacity="1"/>
+                <path d="M0,40 Q480,80 960,40 T1920,40 V80H0Z" fill="#2563eb" fill-opacity="1"/>
             </svg>
         </div>
     </section>
 
-    <!-- AI 銷售客服系統串接 Section -->
+    <!-- AI  銷售智能整合方案 Section -->
     <section class="app-service-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #00509d 0%, #2563eb 50%, #38bdf8 100%);">
         <div class="section-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.6; z-index: 0;"></div>
         <div class="container position-relative" style="z-index: 1;">
@@ -176,8 +176,8 @@
                 <div class="col-lg-6 fade-right">
                     <div class="app-content pe-lg-4">
                         <div class="section-header mb-4">
-                            <span class="subtitle text-white">AI 串接服務</span>
-                            <h2 class="text-white">AI 銷售客服系統串接</h2>
+                            <span class="subtitle text-white">AI Sales Intelligence Integration</span>
+                            <h2 class="text-white" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">AI 銷售智能整合方案</h2>
                         </div>
                         <p class="lead mb-5 text-white">整合 LINE、Facebook、官網等多平台，結合 AI 智能客服與銷售自動化，協助企業提升成交率與服務效率，並可彈性串接各式 API 與電商系統。</p>
                         <div class="app-features">
@@ -186,7 +186,7 @@
                                     <i class="fas fa-headset fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">多平台即時客服</h3>
+                                    <h3 class="gradient-text h5 mb-2" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">多平台即時客服</h3>
                                     <p class="text-white">支援 LINE、FB Messenger、官網等多平台，提供 24/7 智能對話服務。</p>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@
                                     <i class="fas fa-bullhorn fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">AI 智能銷售推播</h3>
+                                    <h3 class="gradient-text h5 mb-2" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">AI 智能銷售推播</h3>
                                     <p class="text-white">自動辨識客戶需求，主動推播商品、優惠與活動，提升轉單率。</p>
                                 </div>
                             </div>
@@ -204,13 +204,13 @@
                                     <i class="fas fa-plug fa-2x"></i>
                                 </div>
                                 <div class="feature-content ms-4">
-                                    <h3 class="gradient-text h5 mb-2">API 彈性串接</h3>
+                                    <h3 class="gradient-text h5 mb-2" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">API 彈性串接</h3>
                                     <p class="text-white">可與電商、CRM、ERP 等系統 API 串接，打造專屬自動化服務流程。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-5">
-                            <a href="/contact" class="btn btn-gradient btn-lg">立即諮詢</a>
+                            <a href="/ai-solution" class="btn btn-gradient btn-lg btn-shake" style="background: linear-gradient(90deg, #30a2ff 0%, #75C2F6 100%); color: white !important; border: none; position: relative; overflow: hidden; transition: all 0.3s ease; background-size: 200% 100%;" onmouseover="this.style.backgroundPosition='100% 0'" onmouseout="this.style.backgroundPosition='0 0'">立即了解方案</a>
                         </div>
                     </div>
                 </div>
@@ -877,34 +877,8 @@
         }
     }
 
-    .gradient-text {
-        background: linear-gradient(135deg, #30a2ff 0%, #75C2F6 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-weight: 600;
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-        display: inline-block;
-        position: relative;
-    }
 
-    .gradient-text::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, #30a2ff 0%, #75C2F6 100%);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease;
-    }
-
-    .feature-card:hover .gradient-text::after {
-        transform: scaleX(1);
-    }
+  
 
     .app-service-section {
         background: linear-gradient(135deg, #00509d 0%, #2563eb 50%, #38bdf8 100%);
@@ -947,7 +921,7 @@
     .feature-icon {
         width: 60px;
         height: 60px;
-        background: rgba(255, 255, 255, 0.2);
+        background: #fdf0d5;
         border-radius: 15px;
         display: flex;
         align-items: center;
@@ -956,7 +930,7 @@
     }
 
     .feature-icon i {
-        color: #333;
+        color: #495057;
     }
 
     .feature-item:hover .feature-icon {
@@ -1470,6 +1444,15 @@
     @media (max-width: 768px) {
         .mac-dialog-area-on-img { font-size: 13px; }
         .chat-bubble { max-width: 90%; }
+    }
+
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+        20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+    .btn-shake {
+        animation: shake 0.8s ease-in-out;
     }
     </style>
 
