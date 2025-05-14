@@ -283,74 +283,280 @@
     </section>
 
     <!-- 我們的服務 Section -->
-    <section class="feature-service-section py-5 position-relative" style="background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 50%, #d9e9ff 100%);">
+    <section class="feature-service-section py-5 position-relative" style="background: linear-gradient(135deg, #00509d 0%, #2563eb 50%, #38bdf8 100%);">
         <div class="service-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(45deg, rgba(48, 162, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(48, 162, 255, 0.05) 50%, rgba(48, 162, 255, 0.05) 75%, transparent 75%, transparent); background-size: 30px 30px; opacity: 0.4; z-index: 0;"></div>
         <div class="container position-relative" style="z-index: 1;">
             <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center fade-up delay-8">
-                    <span class="feature-section-subtitle d-block">OUR SERVICE</span>
-                    <h2 class="feature-section-title mb-3 fade-up ">我們的服務</h2>
-                    <p class="feature-section-desc">專業團隊為您提供一站式數位解決方案，從網站設計、SEO、AI 銷售到數位行銷，協助品牌數位轉型與成長。</p>
+                <div class="col-lg-8 text-center service-header">
+                    <span class="text-white service-subtitle">OUR SERVICE</span>
+                    <h2 class="mb-3 service-title" style="color: #fefae0 !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);font-size: 2.5rem;">我們的服務</h2>
+                    <p class="text-white service-description">專業團隊為您提供一站式數位解決方案，從網站設計、SEO、AI 銷售到數位行銷，協助品牌數位轉型與成長。</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0s;">
+                    <div class="feature-card-modern h-100 text-center p-4 service-card">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/webservice.png') }}" alt="網站設計與開發" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
-                        <h4 class="feature-title-modern gradient-title">網站設計與開發</h4>
-                        <p class="feature-desc-modern">我們專注於為企業打造專業且具吸引力的網站，從企業形象網站到電子商務平台，皆可量身訂做，確保您的網站在各種裝置上都能完美呈現。</p>
+                        <h3 class="" style="color: #fdfcdc !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">網站設計與開發</h3>
+                        <p class="text-white">我們專注於為企業打造專業且具吸引力的網站，從企業形象網站到電子商務平台，皆可量身訂做，確保您的網站在各種裝置上都能完美呈現。</p>
                     </div>
                 </div>  
                 <div class="col-md-6 col-lg-4">
-                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.15s;">
+                    <div class="feature-card-modern h-100 text-center p-4 service-card">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/seoservice.png') }}" alt="搜尋引擎優化" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
-                        <h4 class="feature-title-modern gradient-title">搜尋引擎優化（SEO）</h4>
-                        <p class="feature-desc-modern">透過關鍵字策略、網站結構優化與內容行銷，提升您的網站在搜尋引擎中的排名，增加曝光度，吸引更多潛在客戶。</p>
+                        <h3 class=""  style="color: #fdfcdc !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">搜尋引擎優化（SEO）</h3>
+                        <p class="text-white">透過關鍵字策略、網站結構優化與內容行銷，提升您的網站在搜尋引擎中的排名，增加曝光度，吸引更多潛在客戶。</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.3s;">
+                    <div class="feature-card-modern h-100 text-center p-4 service-card">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/aiservice.png') }}" alt="AI 銷售解決方案" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
-                        <h4 class="feature-title-modern gradient-title">AI 銷售解決方案</h4>
-                        <p class="feature-desc-modern">結合人工智慧技術，提供智能化的銷售工具，如聊天機器人、自動化行銷流程等，協助您提升銷售效率與客戶滿意度。</p>
+                        <h3 class=""  style="color: #fdfcdc !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">AI 銷售解決方案</h3>
+                        <p class="text-white">結合人工智慧技術，提供智能化的銷售工具，如聊天機器人、自動化行銷流程等，協助您提升銷售效率與客戶滿意度。</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.45s;">
+                    <div class="feature-card-modern h-100 text-center p-4 service-card">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/codedev.png') }}" alt="客製化後台系統開發" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
-                        <h4 class="feature-title-modern gradient-title">客製化後台系統開發</h4>
-                        <p class="feature-desc-modern">根據您的業務需求，開發專屬的後台管理系統，讓您輕鬆管理網站內容、訂單、客戶資料等，提高營運效率。</p>
+                        <h3 class=""  style="color: #fdfcdc !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">客製化後台系統開發</h3>
+                        <p class="text-white">根據您的業務需求，開發專屬的後台管理系統，讓您輕鬆管理網站內容、訂單、客戶資料等，提高營運效率。</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.6s;">
+                    <div class="feature-card-modern h-100 text-center p-4 service-card">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/maintenance.png') }}" alt="網站維護與技術支援" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
-                        <h4 class="feature-title-modern gradient-title">網站維護與技術支援</h4>
-                        <p class="feature-desc-modern">提供網站日常維護、功能更新與技術支援服務，確保您的網站穩定運行，並隨時應對各種技術挑戰。</p>
+                        <h3 class=""  style="color: #fdfcdc !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">網站維護與技術支援</h3>
+                        <p class="text-white">提供網站日常維護、功能更新與技術支援服務，確保您的網站穩定運行，並隨時應對各種技術挑戰。</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="feature-card-modern h-100 text-center p-4" style="animation-delay: 0.75s;">
+                    <div class="feature-card-modern h-100 text-center p-4 service-card">
                         <div class="feature-img-modern mb-3">
                             <img src="{{ asset('images/shopping.png') }}" alt="電子商務平台建置與整合" class="img-fluid" style="width:64px;height:64px;object-fit:contain;">
                         </div>
-                        <h4 class="feature-title-modern gradient-title">電子商務平台建置與整合</h4>
-                        <p class="feature-desc-modern">為您打造完整的電子商務解決方案，從購物車、金流、物流到庫存管理系統，提供一站式服務，協助您快速建立並管理線上商店。</p>
+                        <h3 class=""  style="color: #fdfcdc !important; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">電子商務平台建置與整合</h3>
+                        <p class="text-white">為您打造完整的電子商務解決方案，從購物車、金流、物流到庫存管理系統，提供一站式服務，協助您快速建立並管理線上商店。</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+    /* 圖片淡出動畫樣式 */
+    .fade-image {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1.5s ease-out;
+    }
+
+    .fade-image.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* 為不同區塊的圖片設置不同的延遲時間 */
+    .hero-banner img { transition-delay: 0.8s; }
+    .plan-img-bg img { transition-delay: 0.4s; }
+    .feature-img-modern img { transition-delay: 0.6s; }
+    .seo-image-wrapper img { transition-delay: 0.8s; }
+    .portfolio-card img { transition-delay: 0.4s; }
+
+    /* 服務區塊動畫樣式 */
+    .service-header {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1.8s ease-out;
+    }
+
+    .service-header.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .service-subtitle {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1.5s ease-out;
+        transition-delay: 0.4s;
+    }
+
+    .service-title {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1.5s ease-out;
+        transition-delay: 0.8s;
+    }
+
+    .service-description {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1.5s ease-out;
+        transition-delay: 1.2s;
+    }
+
+    .service-header.animate .service-subtitle,
+    .service-header.animate .service-title,
+    .service-header.animate .service-description {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .service-card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1.5s ease-out;
+    }
+
+    .service-card.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .service-card:nth-child(1) { transition-delay: 0.4s; }
+    .service-card:nth-child(2) { transition-delay: 0.8s; }
+    .service-card:nth-child(3) { transition-delay: 1.2s; }
+    .service-card:nth-child(4) { transition-delay: 1.6s; }
+    .service-card:nth-child(5) { transition-delay: 2.0s; }
+    .service-card:nth-child(6) { transition-delay: 2.4s; }
+
+    /* 所有 h3 和 p 元素的動畫樣式 */
+    .animate-text h3,
+    .animate-text p {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1.5s ease-out;
+    }
+
+    .animate-text.animate h3,
+    .animate-text.animate p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* 為每個元素設置不同的延遲時間 */
+    .animate-text h3:nth-child(1) { transition-delay: 0.4s; }
+    .animate-text h3:nth-child(2) { transition-delay: 0.8s; }
+    .animate-text h3:nth-child(3) { transition-delay: 1.2s; }
+    .animate-text h3:nth-child(4) { transition-delay: 1.6s; }
+    .animate-text h3:nth-child(5) { transition-delay: 2.0s; }
+    .animate-text h3:nth-child(6) { transition-delay: 2.4s; }
+
+    .animate-text p:nth-child(1) { transition-delay: 0.6s; }
+    .animate-text p:nth-child(2) { transition-delay: 1.0s; }
+    .animate-text p:nth-child(3) { transition-delay: 1.4s; }
+    .animate-text p:nth-child(4) { transition-delay: 1.8s; }
+    .animate-text p:nth-child(5) { transition-delay: 2.2s; }
+    .animate-text p:nth-child(6) { transition-delay: 2.6s; }
+    </style>
+
+    @push('scripts')
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 圖片動畫觀察者
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        // 為所有圖片添加淡出動畫類
+        document.querySelectorAll('img').forEach(img => {
+            img.classList.add('fade-image');
+            imageObserver.observe(img);
+        });
+
+        // 服務區塊動畫
+        const serviceObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -150px 0px'
+        });
+
+        // 觀察服務區塊標題
+        const serviceHeader = document.querySelector('.service-header');
+        if (serviceHeader) {
+            serviceObserver.observe(serviceHeader);
+        }
+
+        // 觀察服務卡片
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            serviceObserver.observe(card);
+        });
+
+        // 文字動畫觀察者
+        const textObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        // 為所有包含 h3 和 p 的區塊添加 animate-text 類
+        document.querySelectorAll('section').forEach(section => {
+            if (section.querySelector('h3') || section.querySelector('p')) {
+                section.classList.add('animate-text');
+                textObserver.observe(section);
+            }
+        });
+
+        // 其他現有的動畫觀察者
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        document.querySelectorAll('.fade-right, .fade-left').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // 其他現有的動畫觀察者
+        var fadeUpObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    fadeUpObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-up').forEach(function(el) {
+            fadeUpObserver.observe(el);
+        });
+    });
+    </script>
+    @endpush
 
     <!-- 成功案例 -->
     <section class="portfolio-section py-5 bg-light">
