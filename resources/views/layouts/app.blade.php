@@ -46,7 +46,7 @@
                         <a class="nav-link @if(request()->routeIs('ai-solution')) active @endif" href="{{ route('ai-solution') }}">AI 智能整合方案</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @if(request()->routeIs('portfolio')) active @endif" href="{{ route('portfolio') }}">作品案例</a>
+                        <a class="nav-link @if(request()->routeIs('portfolio')) active @endif" href="{{ route('portfolio') }}">成功案例</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('about*') ? 'active' : '' }}" href="/about">關於我們</a>

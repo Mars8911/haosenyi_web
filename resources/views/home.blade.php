@@ -9,7 +9,7 @@
 
 @section('content')
     <!-- Hero Banner -->
-    <section class="hero-banner">
+    <section class="hero-banner" style="background: linear-gradient(135deg, #00509d 0%, #2563eb 50%, #38bdf8 100%);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -561,7 +561,13 @@
     <!-- 成功案例 -->
     <section class="portfolio-section py-5 bg-light">
         <div class="container">
-            <h2 class="text-center section-title">成功案例</h2>
+            <div class="text-center mb-5">
+                <h2 class="section-title d-inline-block">成功案例</h2>
+                <p class="mt-4" style="color: #666; font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+                    我們服務過來自各行各業的企業，從形象官網、購物商城、預約系統到 AI 智能整合平台，<br>
+                    每一個專案都量身打造，協助客戶提升品牌價值與營運效益。歡迎您參考我們的實際案例成果
+                </p>
+            </div>
             <div class="row g-4">
                 @for($i = 0; $i < 6; $i++)
                 <div class="col-md-6 col-lg-4">
