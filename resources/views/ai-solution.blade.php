@@ -4,34 +4,7 @@
 @section('description', '結合AI與網站技術，打造專屬智慧數位平台，AI客服、行銷自動化、數據分析、API串接一站式服務。')
 
 @push('styles')
-<style>
-.ai-hero-bg {
-    background: linear-gradient(135deg, #a2d2ff 0%, #38bdf8 100%);
-    padding: 80px 0 60px 0;
-    text-align: center;
-}
-.ai-feature-icon {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    background: linear-gradient(135deg, #2563eb 0%, #34d399 100%);
-    color: #fff;
-    border-radius: 16px;
-}
-.ai-section {
-    padding: 60px 0;
-}
-.ai-tech-img {
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto 2rem auto;
-    display: block;
-}
-</style>
+<link rel="stylesheet" href="{{ asset('css/about.css') }}">
 @endpush
 
 @section('content')

@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', '方案說明 - 好森逸行銷科技')
+@section('title', 'Ai網站方案 - 好森逸行銷科技')
 @section('description', '好森逸行銷科技提供多種網站設計方案，包括超值方案、購物車方案、形象網站方案等，讓您選擇最適合的服務')
 
 @section('content')
     <section class="plans-header py-5 bg-light">
         <div class="container text-center">
-            <h1 class="section-title">方案說明</h1>
+            <h1 class="section-title">Ai網站方案</h1>
             <p class="lead">選擇最適合您的網站方案，打造最具效益的專業網站</p>
         </div>
     </section>
