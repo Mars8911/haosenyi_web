@@ -1,0 +1,52 @@
+/* Banner 區塊 */
+.banner-hero {
+  background: #e6f4ff url('/images/plan-basic.jpg') center center/cover no-repeat;
+  min-height: 400px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner-hero .banner-title {
+  color: #30a2ff;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.banner-hero .banner-desc {
+  color: #30a2ff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+/* 方案圖片最大化 */
+.plan-img-max {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* 小圖最大寬度 */
+.plan-img-small {
+  max-width: 200px;
+}
+
+/* CTA 按鈕主色 */
+.btn-primary {
+  background: #30a2ff;
+  border: none;
+}
+
+.plan-basic-desc {
+  text-align: center;
+  color: #1e96fc;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.plan-basic-feature-text {
+  font-size: 1.2rem;
+}

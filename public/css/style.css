@@ -70,7 +70,8 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    right: 50%;
     width: 0;
     height: 3px;
     background: linear-gradient(90deg, #30a2ff, #75C2F6);

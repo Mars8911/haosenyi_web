@@ -23,6 +23,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/plan-basic.css">
+    <link rel="stylesheet" href="/css/about.css">
     
     @stack('styles')
 </head>
