@@ -65,7 +65,7 @@
                                 <li>基本SEO優化</li>
                                 <li>一年免費維護</li>
                             </ul>
-                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/plan-basic" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                                 <li>進階SEO優化</li>
                                 <li>一年免費維護</li>
                             </ul>
-                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/plan-custom" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                                 <li>訂單管理系統</li>
                                 <li>會員管理系統</li>
                             </ul>
-                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/plan-ecommerce" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                                 <li>系統整合</li>
                                 <li>長期技術支援</li>
                             </ul>
-                            <a href="/ai-web-solution" class="btn btn-outline-primary w-100">了解更多</a>
+                            <a href="/plan-advanced" class="btn btn-outline-primary w-100">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -626,7 +626,7 @@
                             <label for="demand" class="form-label">需求 <span class="text-danger">*</span></label>
                             <select class="form-select" id="demand" name="demand" required>
                                 <option value="">請選擇需求</option>
-                                <option value="8800超值方案">8800超值方案</option>
+                                <option value="7800超值方案">7800超值方案</option>
                                 <option value="半客製形象網站">半客製形象網站</option>
                                 <option value="模組購物車方案">模組購物車方案</option>
                                 <option value="客製化網站專案">客製化網站專案</option>

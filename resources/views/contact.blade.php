@@ -43,7 +43,7 @@
                             <label for="plan" class="form-label">想詢問的方案</label>
                             <select class="form-select" id="plan" name="plan">
                                 <option value="">請選擇</option>
-                                <option value="8800超值方案">8800超值方案</option>
+                                <option value="7800超值方案">7800超值方案</option>
                                 <option value="模組購物車方案">模組購物車方案</option>
                                 <option value="半客製形象網站">半客製形象網站</option>
                                 <option value="客製化網站專案">客製化網站專案</option>

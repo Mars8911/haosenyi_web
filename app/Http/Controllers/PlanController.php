@@ -10,7 +10,7 @@ class PlanController extends Controller
     {
         $plans = [
             [
-                'name' => '8800超值方案',
+                'name' => '7800超值方案',
                 'price' => 'NT$8,800 起',
                 'features' => [
                     '響應式網站設計',

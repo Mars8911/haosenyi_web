@@ -39,8 +39,16 @@
                     <li class="nav-item">
                         <a class="nav-link @if(request()->routeIs('home')) active @endif" href="{{ route('home') }}">首頁</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link @if(request()->routeIs('ai-web-solution')) active @endif" href="{{ route('ai-web-solution') }}">AI 網站方案</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle @if(request()->routeIs('ai-web-solution') || request()->routeIs('plan.basic') || request()->routeIs('plan.custom') || request()->routeIs('plan.ecommerce') || request()->routeIs('plan.advanced')) active @endif" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            AI 網站方案
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item @if(request()->routeIs('plan.basic')) active @endif" href="{{ route('plan.basic') }}">7800超值方案</a></li>
+                            <li><a class="dropdown-item @if(request()->routeIs('plan.custom')) active @endif" href="{{ route('plan.custom') }}">半客製形象網站</a></li>
+                            <li><a class="dropdown-item @if(request()->routeIs('plan.ecommerce')) active @endif" href="{{ route('plan.ecommerce') }}">模組購物車方案</a></li>
+                            <li><a class="dropdown-item @if(request()->routeIs('plan.advanced')) active @endif" href="{{ route('plan.advanced') }}">客製化網站專案</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @if(request()->routeIs('ai-solution')) active @endif" href="{{ route('ai-solution') }}">AI 智能整合方案</a>
@@ -128,5 +136,47 @@
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     @stack('scripts')
+
+    <style>
+    /* 滑鼠滑過自動展開下拉選單 */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+    /* 主選單 active 狀態的下方線條變細，覆蓋所有互動狀態 */
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.active:focus,
+    .navbar-nav .nav-link.active:visited,
+    .navbar-nav .nav-link.active:active {
+        position: relative;
+    }
+    .navbar-nav .nav-link.active::after,
+    .navbar-nav .nav-link.active:focus::after,
+    .navbar-nav .nav-link.active:visited::after,
+    .navbar-nav .nav-link.active:active::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #30a2ff;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 1px;
+    }
+
+    /* 下拉選單子項目 active 狀態：藍底白字 */
+    .dropdown-menu .dropdown-item.active,
+    .dropdown-menu .dropdown-item:active {
+        background-color: #30a2ff !important;
+        color: #fff !important;
+    }
+
+    /* 隱藏 Bootstrap dropdown caret */
+    .navbar-nav .dropdown-toggle::after {
+        display: none !important;
+    }
+    </style>
 </body>
 </html> 

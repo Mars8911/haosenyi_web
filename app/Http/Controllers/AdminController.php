@@ -52,7 +52,7 @@ class AdminController extends Controller
                 'email' => 'example@example.com',
                 'phone' => '0912-345-678',
                 'company' => '測試公司',
-                'plan' => '8800超值方案',
+                'plan' => '7800超值方案',
                 'message' => '想要了解網站設計的相關資訊',
                 'created_at' => '2024-03-01 10:00:00'
             ],

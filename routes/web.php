@@ -30,6 +30,10 @@ Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/ai-solution', [AiSolutionController::class, 'index'])->name('ai-solution');
+Route::get('/plan-basic', function() { return view('plan-basic'); })->name('plan.basic');
+Route::get('/plan-custom', function() { return view('plan-custom'); })->name('plan.custom');
+Route::get('/plan-ecommerce', function() { return view('plan-ecommerce'); })->name('plan.ecommerce');
+Route::get('/plan-advanced', function() { return view('plan-advanced'); })->name('plan.advanced');
 
 // 管理後台路由
 Route::prefix('admin')->group(function () {

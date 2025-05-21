@@ -64,7 +64,7 @@
                                     <tr>
                                         <td>王先生</td>
                                         <td>0912-345-678</td>
-                                        <td>8800超值方案</td>
+                                        <td>7800超值方案</td>
                                         <td>2024-03-01</td>
                                     </tr>
                                     <!-- Add more rows as needed -->
