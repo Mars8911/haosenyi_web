@@ -50,3 +50,8 @@
 .plan-basic-feature-text {
   font-size: 1.2rem;
 }
+
+.plan-img-mid {
+  max-width: 350px;
+  width: 100%;
+}

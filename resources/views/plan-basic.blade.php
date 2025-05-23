@@ -99,20 +99,21 @@
           <h3 class=""><b>AI客服 自動幫您介紹公司</b></h3>
           <p class="plan-basic-feature-text">AI 智能客服全天候待命
           透過先進的自然語言處理技術，AI 客服能主動向訪客問候並介紹公司核心理念，從品牌故事到服務項目，一氣呵成。採用機器學習演算法，不斷優化對話流，確保每一次互動都精準又生動。</p>
-          <div class=""></div>
         </div>
         <div class="col-md-6 text-center">
           <img src="/images/ai-service.png" alt="AI客服介紹公司" class="img-fluid plan-img-max">
         </div>
       </div>
-      <div class="row align-items-center mb-5 flex-md-row-reverse">
-        <div class="col-md-6">
-          <h5><b>AI 客服 為您介紹商品</b></h5>
-          <p>自動化商品介紹，提升銷售效率，減少人力成本。</p>
+
+      <div class="row align-items-center mb-5">
+      <div class="col-md-6 text-center">
+          <img src="/images/ai-24h.png" alt="AI客服 24小時為您介紹商品" class="img-fluid plan-img-mid">
         </div>
         <div class="col-md-6 text-center">
-          <img src="/images/ai-service.png" alt="AI客服介紹商品" class="img-fluid plan-img-small">
+          <h3 class=""><b>AI客服 24小時為您介紹商品</b></h3>
+          <p class="plan-basic-feature-text">自動化商品介紹，提升銷售效率，減少人力成本。</p>
         </div>
+       
       </div>
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
