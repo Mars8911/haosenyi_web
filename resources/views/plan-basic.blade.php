@@ -24,7 +24,7 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-start">
-                  <i class="fas fa-mobile-alt fa-2x mb-3 text-primary"></i>
+                  <img src="/images/responsive-design.png" alt="響應式網站設計" class="plan-feature-img mb-3">
                   <h5 class="card-title">響應式網站設計</h5>
                   <p class="fw-bold mb-2">完美支援各種裝置瀏覽</p>
                   <ul class="list-unstyled ms-2">
@@ -38,7 +38,7 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-start">
-                  <i class="fas fa-file-alt fa-2x mb-3 text-primary"></i>
+                  <img src="/images/plan2.png" alt="五頁以內精簡架構" class="plan-feature-img mb-3">
                   <h5 class="card-title fw-bold">五頁以內精簡架構</h5>
                   <p class="fw-bold mb-2">高效呈現最重要資訊</p>
                   <ul class="list-unstyled ms-2">
@@ -52,7 +52,7 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-start">
-                  <i class="fas fa-search fa-2x mb-3 text-primary"></i>
+                  <img src="/images/plan3.png" alt="基本 SEO 優化" class="plan-feature-img mb-3">
                   <h5 class="card-title fw-bold">基本 SEO 優化</h5>
                   <p class="fw-bold mb-2">提升搜尋引擎排名與曝光</p>
                   <ul class="list-unstyled ms-2">
@@ -67,7 +67,7 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-start">
-                  <i class="fas fa-tools fa-2x mb-3 text-primary"></i>
+                  <img src="/images/plan4.png" alt="一年免費維護＋主機空間" class="plan-feature-img mb-3">
                   <h5 class="card-title fw-bold">一年免費維護＋主機空間</h5>
                   <p class="fw-bold mb-2">讓您無後顧之憂，專注業務成長</p>
                   <ul class="list-unstyled ms-2">

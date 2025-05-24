@@ -199,6 +199,13 @@ body {
     z-index: 1000;
 }
 
+.plan-feature-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: inline-block;
+  }
+
 @media (max-width: 768px) {
     .line-float-btn {
         bottom: 10px;
