@@ -13,7 +13,7 @@
     {{-- 適合對象 --}}
             <h2 class="text-center plan-basic-title section-title py-4">適合中小企業的全方位品牌官網</h2>
             <p class="plan-basic-desc text-muted px-5">
-            7800 元網站方案 專為中小企業量身打造 快速上線 一次到位。結合響應式 RWD、SEO 基本優化與一年免費維護，
+            7800 元網站方案 專為中小企業量身打造 快速上線 一次到位。<br>結合響應式 RWD、SEO 基本優化與一年免費維護＋主機空間，
             讓您快速上線、提升曝光，並持續搶佔市場先機。
             </p>
     {{-- 方案說明 --}}
@@ -38,7 +38,7 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-start">
-                  <img src="/images/plan2.png" alt="五頁以內精簡架構" class="plan-feature-img mb-3">
+                  <img src="/images/web-design7800.png" alt="五頁以內精簡架構" class="plan-feature-img mb-3">
                   <h5 class="card-title fw-bold">五頁以內精簡架構</h5>
                   <p class="fw-bold mb-2">高效呈現最重要資訊</p>
                   <ul class="list-unstyled ms-2">
@@ -52,7 +52,7 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-start">
-                  <img src="/images/plan3.png" alt="基本 SEO 優化" class="plan-feature-img mb-3">
+                  <img src="/images/search-seo7800.png" alt="基本 SEO 優化" class="plan-feature-img mb-3">
                   <h5 class="card-title fw-bold">基本 SEO 優化</h5>
                   <p class="fw-bold mb-2">提升搜尋引擎排名與曝光</p>
                   <ul class="list-unstyled ms-2">
