@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/plan-basic.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/hero-banner.css">
     
     @stack('styles')
 </head>

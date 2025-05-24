@@ -67,7 +67,7 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body text-start">
-                  <img src="/images/plan4.png" alt="一年免費維護＋主機空間" class="plan-feature-img mb-3">
+                  <img src="/images/web-hosting.png" alt="一年免費維護＋主機空間" class="plan-feature-img mb-3">
                   <h5 class="card-title fw-bold">一年免費維護＋主機空間</h5>
                   <p class="fw-bold mb-2">讓您無後顧之憂，專注業務成長</p>
                   <ul class="list-unstyled ms-2">
@@ -83,40 +83,19 @@
         </div>
       </div>
     </div>
-    {{-- 商業價值區塊 --}}
-    <div class="container mb-5">
-      <h3 class="text-center mb-4">商業價值</h3>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center">
-              <i class="fas fa-money-bill-wave fa-2x mb-3 text-primary"></i>
-              <h5 class="card-title">大幅降低人力成本</h5>
-              <p class="card-text">無需全天工讀人員，也不怕漏接商機。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center">
-              <i class="fas fa-user-check fa-2x mb-3 text-primary"></i>
-              <h5 class="card-title">提升用戶體驗</h5>
-              <p class="card-text">流暢又親切的對話互動，讓訪客留下好印象。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center">
-              <i class="fas fa-chart-line fa-2x mb-3 text-primary"></i>
-              <h5 class="card-title">增加詢單轉換</h5>
-              <p class="card-text">主動推薦服務與引導填單，提高潛在客戶成單機率。</p>
-            </div>
-          </div>
-        </div>
+
+    {{-- 加購AI客服模組 --}}
+    <div class="plan-addon-banner my-5">
+      <div class="plan-addon-main">
+        <span class="plan-addon-highlight">7800方案，加購AI客服模組只需再</span>
+        <span class="plan-addon-price">NT$10,000</span>
+      </div>
+      <div class="plan-addon-desc">
+        <span class="star">★</span>
+        24小時智能客服、即時對話、表單自動推送、專人導入教學
+        <span class="star">★</span>
       </div>
     </div>
-
     {{-- 三大功能區塊 --}}
     <div class="container">
       <div class="row align-items-center mb-5">
@@ -135,7 +114,7 @@
         </div>
         <div class="col-md-6 text-center">
           <h3 class=""><b>AI客服 24小時為您介紹商品</b></h3>
-          <p class="plan-basic-feature-text">自動化商品介紹，提升銷售效率，減少人力成本。</p>
+          <p class="plan-basic-feature-text">結合 GPT 先進語義理解與商品資料庫，AI 客服能自動化提供商品資訊、特色比較與使用建議，並根據訪客行為即時調整推薦策略，讓每一次互動都像專屬顧問般貼心細緻。。</p>
         </div>
       </div>
       <div class="row align-items-center mb-5">
@@ -187,19 +166,46 @@
           </div>
         </div>
       </div>
-
-      {{-- 加購AI客服模組 --}}
-      <div class="row my-4">
-        <div class="col-md-6">加購 <b>AI 客服模組</b></div>
-        <div class="col-md-6 text-md-end">只要 <b>NT. 10,000</b></div>
-      </div>
-      <p class="text-center mb-4">省去您的大量人力開銷，24小時都在經營</p>
-
-      {{-- CTA按鈕 --}}
-      <div class="text-center">
-        <a href="/contact" class="btn btn-primary btn-lg">立即聯繫</a>
+    </div>
+    {{-- 商業價值區塊 --}}
+    <div class="container mb-5">
+      <h3 class="text-center mb-4">商業價值</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="fas fa-money-bill-wave fa-2x mb-3 text-primary"></i>
+              <h5 class="card-title">大幅降低人力成本</h5>
+              <p class="card-text">無需全天工讀人員，也不怕漏接商機。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="fas fa-user-check fa-2x mb-3 text-primary"></i>
+              <h5 class="card-title">提升用戶體驗</h5>
+              <p class="card-text">流暢又親切的對話互動，讓訪客留下好印象。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="fas fa-chart-line fa-2x mb-3 text-primary"></i>
+              <h5 class="card-title">增加詢單轉換</h5>
+              <p class="card-text">主動推薦服務與引導填單，提高潛在客戶成單機率。</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    {{-- CTA按鈕 --}}
+    <div class="text-center">
+      <a href="/contact" class="btn btn-primary btn-lg">立即聯繫</a>
+    </div>  
+
+  
   </div>
 </section>
 @endsection 
