@@ -29,7 +29,8 @@
 
 /* 小圖最大寬度 */
 .plan-img-small {
-  max-width: 200px;
+  max-width: 600px;
+  width: 100%;
 }
 
 /* CTA 按鈕主色 */

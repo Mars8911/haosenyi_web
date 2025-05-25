@@ -123,7 +123,7 @@
           <p>引導客戶主動聯繫，提升轉換率，表單自動化收集。</p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="/images/feature3.png" alt="協助客戶聯繫" class="img-fluid plan-img-small">
+          <img src="/images/10933916.png" alt="協助客戶聯繫" class="img-fluid plan-img-small">
         </div>
       </div>
       {{-- 功能特色區塊（移動到這裡） --}}
