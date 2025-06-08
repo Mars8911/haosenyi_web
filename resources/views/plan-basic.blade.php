@@ -134,7 +134,10 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <h5 class="card-title">智慧化迎賓引導</h5>
+                  <div class="text-center mb-3">
+                    <img src="/images/features/welcome-guide.png" alt="智慧化迎賓引導" class="img-fluid feature-img" style="max-height: 200px;">
+                  </div>
+                  <h5 class="card-title text-center">智慧化迎賓引導</h5>
                   <p class="card-text">首次訪客自動觸發歡迎語，簡要介紹公司背景與專業領域。</p>
                 </div>
               </div>
@@ -142,7 +145,10 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <h5 class="card-title">互動式產品／服務說明</h5>
+                  <div class="text-center mb-3">
+                    <img src="/images/features/product-guide.png" alt="互動式產品服務說明" class="img-fluid feature-img" style="max-height: 200px;">
+                  </div>
+                  <h5 class="card-title text-center">互動式產品／服務說明</h5>
                   <p class="card-text">根據訪客需求，自動推送對應產品或服務介紹，內建多種範本，輕鬆應對常見詢問。</p>
                 </div>
               </div>
@@ -150,7 +156,10 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <h5 class="card-title">即時問答支援</h5>
+                  <div class="text-center mb-3">
+                    <img src="/images/features/qa-support.png" alt="即時問答支援" class="img-fluid feature-img" style="max-height: 200px;">
+                  </div>
+                  <h5 class="card-title text-center">即時問答支援</h5>
                   <p class="card-text">24 小時全天候解答，包括營業時間、聯絡方式、案例分享等常見問題，無需人工輪班。</p>
                 </div>
               </div>
@@ -158,7 +167,10 @@
             <div class="col-md-6">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="card-body">
-                  <h5 class="card-title">留言與表單代填</h5>
+                  <div class="text-center mb-3">
+                    <img src="/images/features/form-fill.png" alt="留言與表單代填" class="img-fluid feature-img" style="max-height: 200px;">
+                  </div>
+                  <h5 class="card-title text-center">留言與表單代填</h5>
                   <p class="card-text">自動協助填寫聯絡資料或預約表單，將潛在客戶資訊快速推送給業務人員。</p>
                 </div>
               </div>
